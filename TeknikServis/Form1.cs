@@ -103,5 +103,35 @@ namespace TeknikServis
             Formlar.FrmYeniPersonel fr = new Formlar.FrmYeniPersonel();
             fr.Show();
         }
+
+        private void btnHesapMakinası_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //diagnostics start fonksiyonu içindeki exe yi execute etmeye yarar birnevi çalıştır işlemi görür
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
+
+        private void btnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void btnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("winword");
+        }
+
+        private void btnExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("excel");
+        }
+
+        private void btnNotListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmNotlar fr = new Formlar.FrmNotlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
