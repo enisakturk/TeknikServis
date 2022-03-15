@@ -32,5 +32,11 @@ namespace TeknikServis.Formlar
             MessageBox.Show("Ürünler Kayıt Edildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }
+
+        private void kapat_Click(object sender, EventArgs e)
+        {
+            FrmYeniUrun fr = new FrmYeniUrun();  //bakılacak çalışmıyor
+            fr.Hide();
+        }
     }
 }

@@ -34,6 +34,7 @@ namespace TeknikServis
         public string VERGINO { get; set; }
         public string STATU { get; set; }
         public string ADRES { get; set; }
+        public string ACIKLAMA { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLFATURABILGI> TBLFATURABILGI { get; set; }

@@ -39,7 +39,7 @@ namespace TeknikServis
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.Btnİstatistik = new DevExpress.XtraBars.BarButtonItem();
             this.btnMarka = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnArızalıÜrünListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
@@ -74,6 +74,7 @@ namespace TeknikServis
             this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNotListesi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -99,7 +100,6 @@ namespace TeknikServis
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnNotListesi = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -119,7 +119,7 @@ namespace TeknikServis
             this.barButtonItem5,
             this.Btnİstatistik,
             this.btnMarka,
-            this.barButtonItem8,
+            this.btnArızalıÜrünListesi,
             this.barButtonItem9,
             this.barButtonItem10,
             this.barButtonItem11,
@@ -233,13 +233,14 @@ namespace TeknikServis
             this.btnMarka.Name = "btnMarka";
             this.btnMarka.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarka_ItemClick);
             // 
-            // barButtonItem8
+            // btnArızalıÜrünListesi
             // 
-            this.barButtonItem8.Caption = "Arızalı Ürün Listesi";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.btnArızalıÜrünListesi.Caption = "Arızalı Ürün Listesi";
+            this.btnArızalıÜrünListesi.Id = 8;
+            this.btnArızalıÜrünListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.btnArızalıÜrünListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.btnArızalıÜrünListesi.Name = "btnArızalıÜrünListesi";
+            this.btnArızalıÜrünListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArızalıÜrünListesi_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -457,7 +458,7 @@ namespace TeknikServis
             // 
             // barButtonItem34
             // 
-            this.barButtonItem34.Caption = "Yardım Menüsü";
+            this.barButtonItem34.Caption = "Yardım";
             this.barButtonItem34.Id = 35;
             this.barButtonItem34.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.Image")));
             this.barButtonItem34.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.LargeImage")));
@@ -515,6 +516,15 @@ namespace TeknikServis
             this.barButtonItem41.Id = 42;
             this.barButtonItem41.Name = "barButtonItem41";
             // 
+            // btnNotListesi
+            // 
+            this.btnNotListesi.Caption = "Ajanda";
+            this.btnNotListesi.Id = 45;
+            this.btnNotListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.Image")));
+            this.btnNotListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.LargeImage")));
+            this.btnNotListesi.Name = "btnNotListesi";
+            this.btnNotListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotListesi_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -562,7 +572,7 @@ namespace TeknikServis
             // 
             // ribbonPageGroup12
             // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnArızalıÜrünListesi);
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
@@ -607,8 +617,8 @@ namespace TeknikServis
             // 
             // ribbonPageGroup15
             // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.btnDepartmanListesi);
             this.ribbonPageGroup15.ItemLinks.Add(this.BtnYeniDepartman);
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnDepartmanListesi);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "ribbonPageGroup15";
             // 
@@ -666,7 +676,6 @@ namespace TeknikServis
             this.ribbonPageGroup7.ItemLinks.Add(this.btnKurlar);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem31);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnNotListesi);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem28);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.btnExcel);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem34);
@@ -703,15 +712,6 @@ namespace TeknikServis
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // btnNotListesi
-            // 
-            this.btnNotListesi.Caption = "Ajanda";
-            this.btnNotListesi.Id = 45;
-            this.btnNotListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.Image")));
-            this.btnNotListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnNotListesi.ImageOptions.LargeImage")));
-            this.btnNotListesi.Name = "btnNotListesi";
-            this.btnNotListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNotListesi_ItemClick);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -739,7 +739,7 @@ namespace TeknikServis
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem Btnİstatistik;
         private DevExpress.XtraBars.BarButtonItem btnMarka;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem btnArızalıÜrünListesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;

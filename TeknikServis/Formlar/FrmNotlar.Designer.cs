@@ -37,18 +37,17 @@ namespace TeknikServis.Formlar
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtBaşlık = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtİçerik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaşlık.Properties)).BeginInit();
@@ -56,9 +55,9 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl30
@@ -108,32 +107,24 @@ namespace TeknikServis.Formlar
             // BtnListele
             // 
             this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-            this.BtnListele.Location = new System.Drawing.Point(109, 559);
+            this.BtnListele.Location = new System.Drawing.Point(109, 517);
             this.BtnListele.Margin = new System.Windows.Forms.Padding(8);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(178, 32);
             this.BtnListele.TabIndex = 16;
             this.BtnListele.Text = "LİSTELE";
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(109, 513);
+            this.BtnGuncelle.Location = new System.Drawing.Point(109, 471);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(8);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(178, 32);
             this.BtnGuncelle.TabIndex = 15;
             this.BtnGuncelle.Text = "GÜNCELLE";
-            // 
-            // BtnSil
-            // 
-            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(109, 469);
-            this.BtnSil.Margin = new System.Windows.Forms.Padding(8);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(178, 32);
-            this.BtnSil.TabIndex = 14;
-            this.BtnSil.Text = "SİL";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnKaydet
             // 
@@ -144,6 +135,7 @@ namespace TeknikServis.Formlar
             this.BtnKaydet.Size = new System.Drawing.Size(178, 32);
             this.BtnKaydet.TabIndex = 13;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // labelControl1
             // 
@@ -183,6 +175,7 @@ namespace TeknikServis.Formlar
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
@@ -199,7 +192,6 @@ namespace TeknikServis.Formlar
             this.groupControl1.Controls.Add(this.TxtId);
             this.groupControl1.Controls.Add(this.BtnListele);
             this.groupControl1.Controls.Add(this.BtnGuncelle);
-            this.groupControl1.Controls.Add(this.BtnSil);
             this.groupControl1.Controls.Add(this.BtnKaydet);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.TxtBaşlık);
@@ -209,6 +201,14 @@ namespace TeknikServis.Formlar
             this.groupControl1.Size = new System.Drawing.Size(313, 688);
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "AJANDA İŞLEMLERİ";
+            // 
+            // checkEdit1
+            // 
+            this.checkEdit1.Location = new System.Drawing.Point(117, 288);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Caption = "Okundu Olarak İşaretle";
+            this.checkEdit1.Size = new System.Drawing.Size(157, 24);
+            this.checkEdit1.TabIndex = 30;
             // 
             // labelControl2
             // 
@@ -252,14 +252,6 @@ namespace TeknikServis.Formlar
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // checkEdit1
-            // 
-            this.checkEdit1.Location = new System.Drawing.Point(117, 291);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Okundu Olarak İşaretle";
-            this.checkEdit1.Size = new System.Drawing.Size(157, 24);
-            this.checkEdit1.TabIndex = 30;
-            // 
             // FrmNotlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -273,6 +265,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Name = "FrmNotlar";
             this.Text = "FrmNotlar";
+            this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtİçerik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaşlık.Properties)).EndInit();
@@ -281,9 +274,9 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,7 +291,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.TextEdit TxtId;
         private DevExpress.XtraEditors.SimpleButton BtnListele;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
-        private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit TxtBaşlık;
