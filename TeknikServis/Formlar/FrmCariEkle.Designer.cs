@@ -68,7 +68,6 @@ namespace TeknikServis.Formlar
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.kapat = new DevExpress.XtraEditors.PictureEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtİl.Properties)).BeginInit();
@@ -95,7 +94,6 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKaydet
@@ -550,7 +548,7 @@ namespace TeknikServis.Formlar
             // 
             this.textEdit1.EditValue = "Yeni Cari Ekleme";
             this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(291, 14);
+            this.textEdit1.Location = new System.Drawing.Point(273, 14);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -562,18 +560,6 @@ namespace TeknikServis.Formlar
             this.textEdit1.Size = new System.Drawing.Size(154, 32);
             this.textEdit1.TabIndex = 80;
             // 
-            // pictureEdit14
-            // 
-            this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
-            this.pictureEdit14.Location = new System.Drawing.Point(241, 13);
-            this.pictureEdit14.Name = "pictureEdit14";
-            this.pictureEdit14.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.pictureEdit14.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit14.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit14.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit14.Size = new System.Drawing.Size(40, 40);
-            this.pictureEdit14.TabIndex = 79;
-            // 
             // FrmCariEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -581,7 +567,6 @@ namespace TeknikServis.Formlar
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(740, 574);
             this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.pictureEdit14);
             this.Controls.Add(this.kapat);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.panel7);
@@ -649,7 +634,6 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -693,6 +677,5 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.PictureEdit kapat;
         private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit14;
     }
 }
