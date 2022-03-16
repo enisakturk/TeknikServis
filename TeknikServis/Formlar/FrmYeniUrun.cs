@@ -36,7 +36,10 @@ namespace TeknikServis.Formlar
         private void kapat_Click(object sender, EventArgs e)
         {
             FrmYeniUrun fr = new FrmYeniUrun();  //bakılacak çalışmıyor
-            fr.Hide();
+            this.Hide();
+            
         }
+
+       
     }
 }

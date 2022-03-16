@@ -25,5 +25,11 @@ namespace TeknikServis.Formlar
             db.SaveChanges();
             MessageBox.Show("Departman Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void kapat_Click(object sender, EventArgs e)
+        {
+            FrmYeniDepartman fr = new FrmYeniDepartman();
+            this.Hide();
+        }
     }
 }

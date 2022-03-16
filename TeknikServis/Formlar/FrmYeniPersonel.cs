@@ -30,5 +30,11 @@ namespace TeknikServis.Formlar
             db.SaveChanges();
             MessageBox.Show("Personel Başarıyla Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void kapat_Click(object sender, EventArgs e)
+        {
+            FrmYeniPersonel fr = new FrmYeniPersonel();
+            this.Hide();
+        }
     }
 }

@@ -37,6 +37,10 @@ namespace TeknikServis.Formlar
             MessageBox.Show("Yeni Cari Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        
+        private void kapat_Click(object sender, EventArgs e)
+        {
+            FrmCariEkle fr = new FrmCariEkle();
+            this.Hide();
+        }
     }
 }

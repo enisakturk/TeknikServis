@@ -544,6 +544,7 @@ namespace TeknikServis.Formlar
             this.kapat.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.kapat.Size = new System.Drawing.Size(27, 28);
             this.kapat.TabIndex = 65;
+            this.kapat.Click += new System.EventHandler(this.kapat_Click);
             // 
             // textEdit1
             // 

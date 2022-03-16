@@ -82,7 +82,7 @@ namespace TeknikServis.Formlar
             deger.SOYAD = txtSoyad.Text;
             deger.MAIL = txt_mail.Text;
             deger.TELEFON = txt_tlfn.Text;
-            deger.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
+            deger.DEPARTMAN =byte.Parse(lookUpEdit1.EditValue.ToString());
             db.SaveChanges();
             MessageBox.Show("Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
@@ -94,7 +94,7 @@ namespace TeknikServis.Formlar
             TxtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
             txtSoyad.Text = gridView1.GetFocusedRowCellValue("SOYAD").ToString();
             txt_mail.Text = gridView1.GetFocusedRowCellValue("MAIL").ToString();
-           // txt_tlfn.Text = gridView1.GetFocusedRowCellValue("TELEFON").ToString();  **ERCÜMENT HOCAYA GÖSTER**
+            txt_tlfn.Text = gridView1.GetFocusedRowCellValue("TELEFON").ToString();
         }
     }
 }
