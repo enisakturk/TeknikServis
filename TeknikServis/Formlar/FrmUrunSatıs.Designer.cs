@@ -54,6 +54,8 @@ namespace TeknikServis.Formlar
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtSeriNo = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -76,16 +78,16 @@ namespace TeknikServis.Formlar
             // 
             this.textEdit1.EditValue = "Yeni Satış İşlemi";
             this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(112, 13);
+            this.textEdit1.Location = new System.Drawing.Point(107, 18);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(154, 32);
+            this.textEdit1.Size = new System.Drawing.Size(188, 32);
             this.textEdit1.TabIndex = 119;
             // 
             // kapat
@@ -117,10 +119,10 @@ namespace TeknikServis.Formlar
             // btnKaydet
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(117, 634);
+            this.btnKaydet.Location = new System.Drawing.Point(126, 633);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(140, 35);
-            this.btnKaydet.TabIndex = 100;
+            this.btnKaydet.TabIndex = 8;
             this.btnKaydet.Text = "Satış Yap";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -146,7 +148,7 @@ namespace TeknikServis.Formlar
             this.txtAdet.Properties.Appearance.Options.UseForeColor = true;
             this.txtAdet.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtAdet.Size = new System.Drawing.Size(256, 32);
-            this.txtAdet.TabIndex = 88;
+            this.txtAdet.TabIndex = 5;
             // 
             // pictureEdit6
             // 
@@ -182,7 +184,7 @@ namespace TeknikServis.Formlar
             this.txtFiyat.Properties.Appearance.Options.UseForeColor = true;
             this.txtFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtFiyat.Size = new System.Drawing.Size(257, 32);
-            this.txtFiyat.TabIndex = 90;
+            this.txtFiyat.TabIndex = 6;
             // 
             // pictureEdit5
             // 
@@ -218,7 +220,7 @@ namespace TeknikServis.Formlar
             this.txtTarih.Properties.Appearance.Options.UseForeColor = true;
             this.txtTarih.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtTarih.Size = new System.Drawing.Size(256, 32);
-            this.txtTarih.TabIndex = 86;
+            this.txtTarih.TabIndex = 4;
             // 
             // pictureEdit4
             // 
@@ -254,7 +256,7 @@ namespace TeknikServis.Formlar
             this.txtPersonel.Properties.Appearance.Options.UseForeColor = true;
             this.txtPersonel.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtPersonel.Size = new System.Drawing.Size(256, 32);
-            this.txtPersonel.TabIndex = 85;
+            this.txtPersonel.TabIndex = 3;
             // 
             // pictureEdit3
             // 
@@ -290,7 +292,7 @@ namespace TeknikServis.Formlar
             this.txtMüşteri.Properties.Appearance.Options.UseForeColor = true;
             this.txtMüşteri.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtMüşteri.Size = new System.Drawing.Size(256, 32);
-            this.txtMüşteri.TabIndex = 84;
+            this.txtMüşteri.TabIndex = 2;
             // 
             // panel1
             // 
@@ -314,7 +316,7 @@ namespace TeknikServis.Formlar
             this.txtId.Properties.Appearance.Options.UseForeColor = true;
             this.txtId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtId.Size = new System.Drawing.Size(256, 32);
-            this.txtId.TabIndex = 82;
+            this.txtId.TabIndex = 1;
             // 
             // pictureEdit1
             // 
@@ -350,7 +352,7 @@ namespace TeknikServis.Formlar
             this.txtSeriNo.Properties.Appearance.Options.UseForeColor = true;
             this.txtSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtSeriNo.Size = new System.Drawing.Size(257, 32);
-            this.txtSeriNo.TabIndex = 120;
+            this.txtSeriNo.TabIndex = 7;
             // 
             // pictureEdit7
             // 
@@ -364,12 +366,40 @@ namespace TeknikServis.Formlar
             this.pictureEdit7.Size = new System.Drawing.Size(40, 40);
             this.pictureEdit7.TabIndex = 121;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Enabled = false;
+            this.labelControl1.Location = new System.Drawing.Point(226, 183);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(99, 16);
+            this.labelControl1.TabIndex = 123;
+            this.labelControl1.Text = "Müşteri No Girin !\r\n";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl2.Appearance.Options.UseBackColor = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.Enabled = false;
+            this.labelControl2.Location = new System.Drawing.Point(224, 251);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(106, 16);
+            this.labelControl2.TabIndex = 124;
+            this.labelControl2.Text = "Personel No Girin !\r\n";
+            // 
             // FrmUrunSatıs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(391, 685);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.txtSeriNo);
             this.Controls.Add(this.pictureEdit7);
@@ -415,6 +445,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -444,5 +475,7 @@ namespace TeknikServis.Formlar
         private System.Windows.Forms.Panel panel7;
         private DevExpress.XtraEditors.TextEdit txtSeriNo;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }

@@ -37,5 +37,7 @@ namespace TeknikServis.Formlar
             FrmUrunSatıs fr = new FrmUrunSatıs();
             this.Hide();
         }
+
+       
     }
 }

@@ -102,7 +102,7 @@ namespace TeknikServis.Formlar
             this.btnKaydet.Location = new System.Drawing.Point(485, 496);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(140, 35);
-            this.btnKaydet.TabIndex = 43;
+            this.btnKaydet.TabIndex = 12;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -156,7 +156,7 @@ namespace TeknikServis.Formlar
             this.txtİl.Properties.Appearance.Options.UseForeColor = true;
             this.txtİl.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtİl.Size = new System.Drawing.Size(256, 32);
-            this.txtİl.TabIndex = 31;
+            this.txtİl.TabIndex = 5;
             // 
             // pictureEdit6
             // 
@@ -192,7 +192,7 @@ namespace TeknikServis.Formlar
             this.txtİlçe.Properties.Appearance.Options.UseForeColor = true;
             this.txtİlçe.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtİlçe.Size = new System.Drawing.Size(257, 32);
-            this.txtİlçe.TabIndex = 33;
+            this.txtİlçe.TabIndex = 6;
             // 
             // pictureEdit5
             // 
@@ -228,7 +228,7 @@ namespace TeknikServis.Formlar
             this.txtMail.Properties.Appearance.Options.UseForeColor = true;
             this.txtMail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtMail.Size = new System.Drawing.Size(256, 32);
-            this.txtMail.TabIndex = 29;
+            this.txtMail.TabIndex = 4;
             // 
             // pictureEdit4
             // 
@@ -264,7 +264,7 @@ namespace TeknikServis.Formlar
             this.txtTelefon.Properties.Appearance.Options.UseForeColor = true;
             this.txtTelefon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtTelefon.Size = new System.Drawing.Size(256, 32);
-            this.txtTelefon.TabIndex = 28;
+            this.txtTelefon.TabIndex = 3;
             // 
             // pictureEdit3
             // 
@@ -300,7 +300,7 @@ namespace TeknikServis.Formlar
             this.txtSoyad.Properties.Appearance.Options.UseForeColor = true;
             this.txtSoyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtSoyad.Size = new System.Drawing.Size(256, 32);
-            this.txtSoyad.TabIndex = 26;
+            this.txtSoyad.TabIndex = 2;
             // 
             // panel1
             // 
@@ -324,7 +324,7 @@ namespace TeknikServis.Formlar
             this.txtAd.Properties.Appearance.Options.UseForeColor = true;
             this.txtAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtAd.Size = new System.Drawing.Size(256, 32);
-            this.txtAd.TabIndex = 24;
+            this.txtAd.TabIndex = 1;
             // 
             // pictureEdit1
             // 
@@ -360,7 +360,7 @@ namespace TeknikServis.Formlar
             this.txtAdress.Properties.Appearance.Options.UseForeColor = true;
             this.txtAdress.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtAdress.Size = new System.Drawing.Size(256, 32);
-            this.txtAdress.TabIndex = 54;
+            this.txtAdress.TabIndex = 7;
             // 
             // pictureEdit8
             // 
@@ -396,7 +396,7 @@ namespace TeknikServis.Formlar
             this.txtStatu.Properties.Appearance.Options.UseForeColor = true;
             this.txtStatu.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtStatu.Size = new System.Drawing.Size(255, 32);
-            this.txtStatu.TabIndex = 52;
+            this.txtStatu.TabIndex = 11;
             // 
             // pictureEdit10
             // 
@@ -432,7 +432,7 @@ namespace TeknikServis.Formlar
             this.txtVergiNo.Properties.Appearance.Options.UseForeColor = true;
             this.txtVergiNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtVergiNo.Size = new System.Drawing.Size(256, 32);
-            this.txtVergiNo.TabIndex = 51;
+            this.txtVergiNo.TabIndex = 10;
             // 
             // pictureEdit11
             // 
@@ -468,7 +468,7 @@ namespace TeknikServis.Formlar
             this.txtVergiDairesi.Properties.Appearance.Options.UseForeColor = true;
             this.txtVergiDairesi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtVergiDairesi.Size = new System.Drawing.Size(256, 32);
-            this.txtVergiDairesi.TabIndex = 49;
+            this.txtVergiDairesi.TabIndex = 9;
             // 
             // panel12
             // 
@@ -504,7 +504,7 @@ namespace TeknikServis.Formlar
             this.txtBanka.Properties.Appearance.Options.UseForeColor = true;
             this.txtBanka.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtBanka.Size = new System.Drawing.Size(256, 32);
-            this.txtBanka.TabIndex = 47;
+            this.txtBanka.TabIndex = 8;
             // 
             // pictureEdit13
             // 
@@ -551,13 +551,13 @@ namespace TeknikServis.Formlar
             this.textEdit1.Location = new System.Drawing.Point(273, 14);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(154, 32);
+            this.textEdit1.Size = new System.Drawing.Size(207, 32);
             this.textEdit1.TabIndex = 80;
             // 
             // FrmCariEkle

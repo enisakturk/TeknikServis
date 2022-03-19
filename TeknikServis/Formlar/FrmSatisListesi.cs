@@ -24,8 +24,8 @@ namespace TeknikServis.Formlar
                            {
                                x.HAREKETID,
                                x.TBLURUN.AD,
-                               MÜŞTERİ = x.TBLCARI.AD +" "+ x.TBLCARI.SOYAD,
-                               PERSONEL = x.TBLPERSONEL.AD +" "+ x.TBLPERSONEL.SOYAD,
+                               MÜŞTERİ =x.TBLCARI.ID+" => "+ x.TBLCARI.AD +" "+ x.TBLCARI.SOYAD,
+                               PERSONEL =x.TBLPERSONEL.ID+" => "+ x.TBLPERSONEL.AD +" "+ x.TBLPERSONEL.SOYAD,
                                x.TARIH,
                                x.ADET,
                                x.FIYAT,

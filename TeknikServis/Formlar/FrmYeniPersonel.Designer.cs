@@ -33,7 +33,6 @@ namespace TeknikServis.Formlar
             this.kapat = new DevExpress.XtraEditors.PictureEdit();
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtMail = new DevExpress.XtraEditors.TextEdit();
@@ -52,7 +51,6 @@ namespace TeknikServis.Formlar
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
@@ -85,7 +83,7 @@ namespace TeknikServis.Formlar
             this.btnKaydet.Location = new System.Drawing.Point(126, 502);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(152, 35);
-            this.btnKaydet.TabIndex = 79;
+            this.btnKaydet.TabIndex = 6;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -93,29 +91,17 @@ namespace TeknikServis.Formlar
             // 
             this.textEdit7.EditValue = "Yeni Personel Ekleme";
             this.textEdit7.Enabled = false;
-            this.textEdit7.Location = new System.Drawing.Point(133, 13);
+            this.textEdit7.Location = new System.Drawing.Point(106, 13);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
-            this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit7.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit7.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit7.Properties.Appearance.Options.UseFont = true;
             this.textEdit7.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit7.Size = new System.Drawing.Size(211, 32);
+            this.textEdit7.Size = new System.Drawing.Size(247, 32);
             this.textEdit7.TabIndex = 78;
-            // 
-            // pictureEdit7
-            // 
-            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
-            this.pictureEdit7.Location = new System.Drawing.Point(83, 12);
-            this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit7.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit7.Size = new System.Drawing.Size(40, 40);
-            this.pictureEdit7.TabIndex = 77;
             // 
             // pictureEdit2
             // 
@@ -151,7 +137,7 @@ namespace TeknikServis.Formlar
             this.txtMail.Properties.Appearance.Options.UseForeColor = true;
             this.txtMail.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtMail.Size = new System.Drawing.Size(256, 32);
-            this.txtMail.TabIndex = 86;
+            this.txtMail.TabIndex = 4;
             // 
             // pictureEdit4
             // 
@@ -187,7 +173,7 @@ namespace TeknikServis.Formlar
             this.txtTelefon.Properties.Appearance.Options.UseForeColor = true;
             this.txtTelefon.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtTelefon.Size = new System.Drawing.Size(256, 32);
-            this.txtTelefon.TabIndex = 85;
+            this.txtTelefon.TabIndex = 3;
             // 
             // pictureEdit3
             // 
@@ -223,7 +209,7 @@ namespace TeknikServis.Formlar
             this.txtSoyad.Properties.Appearance.Options.UseForeColor = true;
             this.txtSoyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtSoyad.Size = new System.Drawing.Size(256, 32);
-            this.txtSoyad.TabIndex = 84;
+            this.txtSoyad.TabIndex = 2;
             // 
             // panel1
             // 
@@ -247,7 +233,7 @@ namespace TeknikServis.Formlar
             this.txtAd.Properties.Appearance.Options.UseForeColor = true;
             this.txtAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtAd.Size = new System.Drawing.Size(256, 32);
-            this.txtAd.TabIndex = 82;
+            this.txtAd.TabIndex = 1;
             // 
             // pictureEdit1
             // 
@@ -296,7 +282,7 @@ namespace TeknikServis.Formlar
             this.txtDepartman.Properties.Appearance.Options.UseForeColor = true;
             this.txtDepartman.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtDepartman.Size = new System.Drawing.Size(125, 32);
-            this.txtDepartman.TabIndex = 93;
+            this.txtDepartman.TabIndex = 5;
             // 
             // pictureEdit5
             // 
@@ -335,14 +321,12 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.kapat);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.textEdit7);
-            this.Controls.Add(this.pictureEdit7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmYeniPersonel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmYeniPersonel";
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
@@ -363,7 +347,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PictureEdit kapat;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.TextEdit txtMail;

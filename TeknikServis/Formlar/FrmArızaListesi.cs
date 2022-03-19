@@ -23,8 +23,8 @@ namespace TeknikServis.Formlar
                            select new
                            { 
                                x.ISLEMID,
-                               CARI= x.TBLCARI.AD + x.TBLCARI.SOYAD,
-                               PERSONEL= x.TBLPERSONEL.AD + x.TBLPERSONEL.SOYAD,
+                               CARI= x.TBLCARI.AD +" "+ x.TBLCARI.SOYAD,
+                               PERSONEL= x.TBLPERSONEL.AD +" "+ x.TBLPERSONEL.SOYAD,
                                x.GELISTARIHI,
                                x.CIKISTARIHI,
                                x.URUNSERINO
