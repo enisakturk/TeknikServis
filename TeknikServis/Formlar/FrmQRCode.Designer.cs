@@ -45,10 +45,11 @@ namespace TeknikServis.Formlar
             // QROlustur
             // 
             this.QROlustur.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("QROlustur.ImageOptions.Image")));
-            this.QROlustur.Location = new System.Drawing.Point(95, 152);
+            this.QROlustur.Location = new System.Drawing.Point(71, 124);
+            this.QROlustur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.QROlustur.Name = "QROlustur";
-            this.QROlustur.Size = new System.Drawing.Size(200, 34);
-            this.QROlustur.TabIndex = 0;
+            this.QROlustur.Size = new System.Drawing.Size(150, 28);
+            this.QROlustur.TabIndex = 2;
             this.QROlustur.Text = "QR Oluştur";
             this.QROlustur.Click += new System.EventHandler(this.QROlustur_Click);
             // 
@@ -58,24 +59,27 @@ namespace TeknikServis.Formlar
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 25);
+            this.labelControl1.Location = new System.Drawing.Point(9, 20);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(302, 28);
+            this.labelControl1.Size = new System.Drawing.Size(241, 21);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Seri No İçin QR Code Oluşturma";
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.Location = new System.Drawing.Point(83, 213);
+            this.pictureEdit1.Location = new System.Drawing.Point(62, 173);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(231, 200);
+            this.pictureEdit1.Size = new System.Drawing.Size(173, 162);
             this.pictureEdit1.TabIndex = 2;
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(95, 106);
+            this.textEdit1.Location = new System.Drawing.Point(71, 86);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
@@ -84,20 +88,21 @@ namespace TeknikServis.Formlar
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.textEdit1.Properties.Mask.EditMask = "AAAAA";
             this.textEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.textEdit1.Size = new System.Drawing.Size(200, 20);
-            this.textEdit1.TabIndex = 3;
+            this.textEdit1.Size = new System.Drawing.Size(150, 18);
+            this.textEdit1.TabIndex = 1;
             // 
             // kapat
             // 
             this.kapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapat.EditValue = ((object)(resources.GetObject("kapat.EditValue")));
-            this.kapat.Location = new System.Drawing.Point(350, 12);
+            this.kapat.Location = new System.Drawing.Point(262, 10);
+            this.kapat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kapat.Name = "kapat";
             this.kapat.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.kapat.Properties.Appearance.Options.UseBackColor = true;
             this.kapat.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.kapat.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.kapat.Size = new System.Drawing.Size(27, 28);
+            this.kapat.Size = new System.Drawing.Size(20, 23);
             this.kapat.TabIndex = 81;
             this.kapat.Click += new System.EventHandler(this.kapat_Click);
             // 
@@ -107,9 +112,10 @@ namespace TeknikServis.Formlar
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(19, 105);
+            this.labelControl2.Location = new System.Drawing.Point(14, 85);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(65, 23);
+            this.labelControl2.Size = new System.Drawing.Size(51, 19);
             this.labelControl2.TabIndex = 82;
             this.labelControl2.Text = "Seri No :";
             // 
@@ -117,17 +123,18 @@ namespace TeknikServis.Formlar
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(95, 131);
+            this.panel1.Location = new System.Drawing.Point(71, 106);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.Size = new System.Drawing.Size(150, 1);
             this.panel1.TabIndex = 83;
             // 
             // FrmQRCode
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(389, 436);
+            this.ClientSize = new System.Drawing.Size(292, 354);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.kapat);
@@ -136,6 +143,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.QROlustur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmQRCode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmQRCode";

@@ -67,9 +67,10 @@ namespace TeknikServis.Formlar
             this.toplam_personel.Appearance.ForeColor = System.Drawing.Color.White;
             this.toplam_personel.Appearance.Options.UseFont = true;
             this.toplam_personel.Appearance.Options.UseForeColor = true;
-            this.toplam_personel.Location = new System.Drawing.Point(214, 58);
+            this.toplam_personel.Location = new System.Drawing.Point(148, 47);
+            this.toplam_personel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toplam_personel.Name = "toplam_personel";
-            this.toplam_personel.Size = new System.Drawing.Size(25, 59);
+            this.toplam_personel.Size = new System.Drawing.Size(20, 46);
             this.toplam_personel.TabIndex = 1;
             this.toplam_personel.Text = "1";
             // 
@@ -79,9 +80,10 @@ namespace TeknikServis.Formlar
             this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl14.Appearance.Options.UseFont = true;
             this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(137, 26);
+            this.labelControl14.Location = new System.Drawing.Point(90, 21);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(173, 23);
+            this.labelControl14.Size = new System.Drawing.Size(138, 19);
             this.labelControl14.TabIndex = 0;
             this.labelControl14.Text = "Toplam Personel Sayısı";
             // 
@@ -90,37 +92,38 @@ namespace TeknikServis.Formlar
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel2.Controls.Add(this.toplam_personel);
             this.panel2.Controls.Add(this.labelControl14);
-            this.panel2.Location = new System.Drawing.Point(912, 15);
+            this.panel2.Location = new System.Drawing.Point(712, 12);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(429, 146);
+            this.panel2.Size = new System.Drawing.Size(294, 119);
             this.panel2.TabIndex = 13;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(7, 225);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl7.Location = new System.Drawing.Point(11, 211);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(93, 16);
+            this.labelControl7.Size = new System.Drawing.Size(79, 13);
             this.labelControl7.TabIndex = 17;
             this.labelControl7.Text = "DEPARTMAN ID:\r\n";
             // 
             // TxtId
             // 
             this.TxtId.Enabled = false;
-            this.TxtId.Location = new System.Drawing.Point(109, 222);
-            this.TxtId.Margin = new System.Windows.Forms.Padding(8);
+            this.TxtId.Location = new System.Drawing.Point(94, 209);
+            this.TxtId.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(178, 22);
-            this.TxtId.TabIndex = 18;
+            this.TxtId.Size = new System.Drawing.Size(140, 20);
+            this.TxtId.TabIndex = 1;
             // 
             // BtnListele
             // 
             this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-            this.BtnListele.Location = new System.Drawing.Point(109, 483);
-            this.BtnListele.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnListele.Location = new System.Drawing.Point(94, 394);
+            this.BtnListele.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(178, 32);
-            this.BtnListele.TabIndex = 16;
+            this.BtnListele.Size = new System.Drawing.Size(140, 28);
+            this.BtnListele.TabIndex = 6;
             this.BtnListele.Text = "LİSTELE";
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
@@ -130,42 +133,43 @@ namespace TeknikServis.Formlar
             this.toplam_departman.Appearance.ForeColor = System.Drawing.Color.White;
             this.toplam_departman.Appearance.Options.UseFont = true;
             this.toplam_departman.Appearance.Options.UseForeColor = true;
-            this.toplam_departman.Location = new System.Drawing.Point(201, 60);
+            this.toplam_departman.Location = new System.Drawing.Point(134, 49);
+            this.toplam_departman.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.toplam_departman.Name = "toplam_departman";
-            this.toplam_departman.Size = new System.Drawing.Size(25, 59);
+            this.toplam_departman.Size = new System.Drawing.Size(20, 46);
             this.toplam_departman.TabIndex = 1;
             this.toplam_departman.Text = "1";
             // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(109, 437);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnGuncelle.Location = new System.Drawing.Point(94, 357);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(178, 32);
-            this.BtnGuncelle.TabIndex = 15;
+            this.BtnGuncelle.Size = new System.Drawing.Size(140, 28);
+            this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(109, 393);
-            this.BtnSil.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnSil.Location = new System.Drawing.Point(94, 319);
+            this.BtnSil.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(178, 32);
-            this.BtnSil.TabIndex = 14;
+            this.BtnSil.Size = new System.Drawing.Size(140, 28);
+            this.BtnSil.TabIndex = 4;
             this.BtnSil.Text = "SİL";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(109, 349);
-            this.BtnKaydet.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnKaydet.Location = new System.Drawing.Point(94, 280);
+            this.BtnKaydet.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(178, 32);
-            this.BtnKaydet.TabIndex = 13;
+            this.BtnKaydet.Size = new System.Drawing.Size(140, 28);
+            this.BtnKaydet.TabIndex = 3;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -175,9 +179,10 @@ namespace TeknikServis.Formlar
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(115, 26);
+            this.labelControl12.Location = new System.Drawing.Point(70, 21);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(194, 23);
+            this.labelControl12.Size = new System.Drawing.Size(155, 19);
             this.labelControl12.TabIndex = 0;
             this.labelControl12.Text = "Toplam Departman Sayısı";
             // 
@@ -186,7 +191,7 @@ namespace TeknikServis.Formlar
             this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.Gainsboro;
             this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.WhiteSmoke;
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
-            this.gridView1.DetailHeight = 852;
+            this.gridView1.DetailHeight = 1352;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -194,31 +199,31 @@ namespace TeknikServis.Formlar
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
-            this.gridControl1.Location = new System.Drawing.Point(321, 172);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.gridControl1.Location = new System.Drawing.Point(294, 137);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1020, 517);
+            this.gridControl1.Size = new System.Drawing.Size(712, 427);
             this.gridControl1.TabIndex = 10;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(79, 252);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl1.Location = new System.Drawing.Point(65, 238);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(21, 16);
+            this.labelControl1.Size = new System.Drawing.Size(18, 13);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "AD:\r\n";
             // 
             // TxtAd
             // 
-            this.TxtAd.Location = new System.Drawing.Point(109, 251);
-            this.TxtAd.Margin = new System.Windows.Forms.Padding(8);
+            this.TxtAd.Location = new System.Drawing.Point(94, 236);
+            this.TxtAd.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(178, 22);
+            this.TxtAd.Size = new System.Drawing.Size(140, 20);
             this.TxtAd.TabIndex = 2;
             // 
             // panel1
@@ -226,9 +231,10 @@ namespace TeknikServis.Formlar
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.panel1.Controls.Add(this.toplam_departman);
             this.panel1.Controls.Add(this.labelControl12);
-            this.panel1.Location = new System.Drawing.Point(321, 15);
+            this.panel1.Location = new System.Drawing.Point(301, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(429, 146);
+            this.panel1.Size = new System.Drawing.Size(281, 119);
             this.panel1.TabIndex = 12;
             // 
             // groupControl1
@@ -247,9 +253,9 @@ namespace TeknikServis.Formlar
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.TxtAd);
             this.groupControl1.Location = new System.Drawing.Point(-1, 1);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(315, 688);
+            this.groupControl1.Size = new System.Drawing.Size(288, 563);
             this.groupControl1.TabIndex = 11;
             this.groupControl1.Text = "DEPARTMAN İŞLEMLERİ";
             // 
@@ -257,34 +263,37 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(150, 149);
+            this.pictureEdit1.Size = new System.Drawing.Size(112, 121);
             this.pictureEdit1.TabIndex = 14;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureEdit1);
-            this.panel3.Location = new System.Drawing.Point(756, 15);
+            this.panel3.Location = new System.Drawing.Point(591, 12);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(150, 146);
+            this.panel3.Size = new System.Drawing.Size(112, 119);
             this.panel3.TabIndex = 15;
             // 
             // FrmDepartman
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1348, 692);
+            this.ClientSize = new System.Drawing.Size(1011, 562);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmDepartman";
             this.Text = "FrmDepartman";
             this.Load += new System.EventHandler(this.FrmDepartman_Load);

@@ -62,106 +62,106 @@ namespace TeknikServis.Formlar
             // 
             // labelControl30
             // 
-            this.labelControl30.Location = new System.Drawing.Point(58, 266);
-            this.labelControl30.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl30.Location = new System.Drawing.Point(28, 238);
+            this.labelControl30.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(43, 16);
+            this.labelControl30.Size = new System.Drawing.Size(38, 13);
             this.labelControl30.TabIndex = 28;
             this.labelControl30.Text = "İÇERİK:";
             // 
             // txtİçerik
             // 
-            this.txtİçerik.Location = new System.Drawing.Point(117, 262);
-            this.txtİçerik.Margin = new System.Windows.Forms.Padding(8);
+            this.txtİçerik.Location = new System.Drawing.Point(72, 235);
+            this.txtİçerik.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtİçerik.Name = "txtİçerik";
-            this.txtİçerik.Size = new System.Drawing.Size(178, 22);
-            this.txtİçerik.TabIndex = 29;
+            this.txtİçerik.Size = new System.Drawing.Size(134, 20);
+            this.txtİçerik.TabIndex = 3;
             // 
             // labelControl29
             // 
-            this.labelControl29.Location = new System.Drawing.Point(54, 292);
-            this.labelControl29.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl29.Location = new System.Drawing.Point(24, 259);
+            this.labelControl29.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl29.Name = "labelControl29";
-            this.labelControl29.Size = new System.Drawing.Size(47, 16);
+            this.labelControl29.Size = new System.Drawing.Size(40, 13);
             this.labelControl29.TabIndex = 25;
             this.labelControl29.Text = "DURUM:";
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(55, 211);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl7.Location = new System.Drawing.Point(25, 193);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(46, 16);
+            this.labelControl7.Size = new System.Drawing.Size(39, 13);
             this.labelControl7.TabIndex = 17;
             this.labelControl7.Text = "NOT ID:\r\n";
             // 
             // TxtId
             // 
             this.TxtId.Enabled = false;
-            this.TxtId.Location = new System.Drawing.Point(117, 208);
-            this.TxtId.Margin = new System.Windows.Forms.Padding(8);
+            this.TxtId.Location = new System.Drawing.Point(72, 191);
+            this.TxtId.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(178, 22);
-            this.TxtId.TabIndex = 18;
+            this.TxtId.Size = new System.Drawing.Size(134, 20);
+            this.TxtId.TabIndex = 1;
             // 
             // BtnListele
             // 
             this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-            this.BtnListele.Location = new System.Drawing.Point(109, 517);
-            this.BtnListele.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnListele.Location = new System.Drawing.Point(72, 392);
+            this.BtnListele.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(178, 32);
-            this.BtnListele.TabIndex = 16;
+            this.BtnListele.Size = new System.Drawing.Size(134, 26);
+            this.BtnListele.TabIndex = 7;
             this.BtnListele.Text = "LİSTELE";
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(109, 471);
-            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnGuncelle.Location = new System.Drawing.Point(72, 355);
+            this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(178, 32);
-            this.BtnGuncelle.TabIndex = 15;
+            this.BtnGuncelle.Size = new System.Drawing.Size(134, 26);
+            this.BtnGuncelle.TabIndex = 6;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(109, 425);
-            this.BtnKaydet.Margin = new System.Windows.Forms.Padding(8);
+            this.BtnKaydet.Location = new System.Drawing.Point(72, 317);
+            this.BtnKaydet.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(178, 32);
-            this.BtnKaydet.TabIndex = 13;
+            this.BtnKaydet.Size = new System.Drawing.Size(134, 26);
+            this.BtnKaydet.TabIndex = 5;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(56, 238);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.labelControl1.Location = new System.Drawing.Point(26, 215);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(45, 16);
+            this.labelControl1.Size = new System.Drawing.Size(38, 13);
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "BAŞLIK:\r\n";
             // 
             // TxtBaşlık
             // 
-            this.TxtBaşlık.Location = new System.Drawing.Point(117, 235);
-            this.TxtBaşlık.Margin = new System.Windows.Forms.Padding(8);
+            this.TxtBaşlık.Location = new System.Drawing.Point(72, 213);
+            this.TxtBaşlık.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtBaşlık.Name = "TxtBaşlık";
-            this.TxtBaşlık.Size = new System.Drawing.Size(178, 22);
+            this.TxtBaşlık.Size = new System.Drawing.Size(134, 20);
             this.TxtBaşlık.TabIndex = 2;
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
-            this.gridControl1.Location = new System.Drawing.Point(325, 52);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl1.Location = new System.Drawing.Point(244, 42);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1015, 294);
+            this.gridControl1.Size = new System.Drawing.Size(1123, 239);
             this.gridControl1.TabIndex = 18;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -171,7 +171,7 @@ namespace TeknikServis.Formlar
             this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.Gainsboro;
             this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.WhiteSmoke;
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
-            this.gridView1.DetailHeight = 852;
+            this.gridView1.DetailHeight = 692;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -196,27 +196,29 @@ namespace TeknikServis.Formlar
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.TxtBaşlık);
             this.groupControl1.Location = new System.Drawing.Point(1, 2);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(8);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(313, 688);
+            this.groupControl1.Size = new System.Drawing.Size(235, 622);
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "AJANDA İŞLEMLERİ";
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(117, 288);
+            this.checkEdit1.Location = new System.Drawing.Point(72, 256);
+            this.checkEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Caption = "Okundu Olarak İşaretle";
-            this.checkEdit1.Size = new System.Drawing.Size(157, 24);
-            this.checkEdit1.TabIndex = 30;
+            this.checkEdit1.Size = new System.Drawing.Size(118, 20);
+            this.checkEdit1.TabIndex = 4;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(325, 18);
+            this.labelControl2.Location = new System.Drawing.Point(244, 15);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(176, 23);
+            this.labelControl2.Size = new System.Drawing.Size(144, 19);
             this.labelControl2.TabIndex = 20;
             this.labelControl2.Text = "Okunmayan Notlar";
             // 
@@ -224,20 +226,21 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(325, 362);
+            this.labelControl3.Location = new System.Drawing.Point(244, 357);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(143, 23);
+            this.labelControl3.Size = new System.Drawing.Size(117, 19);
             this.labelControl3.TabIndex = 22;
             this.labelControl3.Text = "Okunan Notlar";
             // 
             // gridControl2
             // 
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
-            this.gridControl2.Location = new System.Drawing.Point(325, 396);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl2.Location = new System.Drawing.Point(244, 385);
             this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(8);
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1015, 294);
+            this.gridControl2.Size = new System.Drawing.Size(1123, 239);
             this.gridControl2.TabIndex = 21;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -247,22 +250,23 @@ namespace TeknikServis.Formlar
             this.gridView2.Appearance.Row.BackColor = System.Drawing.Color.Gainsboro;
             this.gridView2.Appearance.Row.BackColor2 = System.Drawing.Color.WhiteSmoke;
             this.gridView2.Appearance.Row.Options.UseBackColor = true;
-            this.gridView2.DetailHeight = 852;
+            this.gridView2.DetailHeight = 692;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
             // FrmNotlar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1338, 692);
+            this.ClientSize = new System.Drawing.Size(1370, 626);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmNotlar";
             this.Text = "FrmNotlar";
             this.Load += new System.EventHandler(this.FrmNotlar_Load);

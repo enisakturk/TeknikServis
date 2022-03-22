@@ -78,5 +78,7 @@ namespace TeknikServis.Formlar
             TxtAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
 
         }
+
+        
     }
 }

@@ -104,6 +104,7 @@ namespace TeknikServis
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -161,10 +162,11 @@ namespace TeknikServis
             this.btnNotListesi,
             this.btnÜrünSatışı,
             this.btnSatısListesi,
-            this.btnArızalıUrunDetay});
+            this.btnArızalıUrunDetay,
+            this.btnFaturaListesi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8);
-            this.ribbonControl1.MaxItemId = 49;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.ribbonControl1.MaxItemId = 50;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -271,8 +273,8 @@ namespace TeknikServis
             // 
             this.btnQRCode.Caption = "QR Code Oluştur";
             this.btnQRCode.Id = 11;
-            this.btnQRCode.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.btnQRCode.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.btnQRCode.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQRCode.ImageOptions.Image")));
+            this.btnQRCode.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQRCode.ImageOptions.LargeImage")));
             this.btnQRCode.Name = "btnQRCode";
             this.btnQRCode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQRCode_ItemClick);
             // 
@@ -686,6 +688,7 @@ namespace TeknikServis
             // ribbonPageGroup14
             // 
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem18);
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnFaturaListesi);
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem20);
             this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem21);
@@ -757,6 +760,15 @@ namespace TeknikServis
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // btnFaturaListesi
+            // 
+            this.btnFaturaListesi.Caption = "Fatura Listesi";
+            this.btnFaturaListesi.Id = 49;
+            this.btnFaturaListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnFaturaListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnFaturaListesi.Name = "btnFaturaListesi";
+            this.btnFaturaListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFaturaListesi_ItemClick);
             // 
             // Form1
             // 
@@ -850,6 +862,7 @@ namespace TeknikServis
         private DevExpress.XtraBars.BarButtonItem btnSatısListesi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.BarButtonItem btnArızalıUrunDetay;
+        private DevExpress.XtraBars.BarButtonItem btnFaturaListesi;
     }
 }
 
