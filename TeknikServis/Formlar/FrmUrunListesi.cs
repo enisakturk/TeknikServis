@@ -39,7 +39,7 @@ namespace TeknikServis.Formlar
         {
             Listele();
             //veri tabanındaki kategori listesinin çekilmesi için kullandım
-            lookUpEdit1.Properties.DataSource = (from u in db.TBLURUN
+            lookUpEdit1.Properties.DataSource = (from u in db.TBLKATEGORI
                                                  select new
                                                  {
                                                      u.ID,

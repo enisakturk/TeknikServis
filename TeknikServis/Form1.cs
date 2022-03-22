@@ -185,5 +185,19 @@ namespace TeknikServis
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnFaturaKalem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmFaturaKalem fr = new Formlar.FrmFaturaKalem();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void btnFaturaDetayListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmFaturaKalemleri fr = new Formlar.FrmFaturaKalemleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

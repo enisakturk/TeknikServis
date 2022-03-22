@@ -70,7 +70,7 @@ namespace TeknikServis.Formlar
             var deger = db.TBLPERSONEL.Find(id);
             db.TBLPERSONEL.Remove(deger);
             db.SaveChanges();
-            MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Personel Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
         }
 
@@ -84,7 +84,7 @@ namespace TeknikServis.Formlar
             deger.TELEFON = txt_tlfn.Text;
             deger.DEPARTMAN =byte.Parse(lookUpEdit1.EditValue.ToString());
             db.SaveChanges();
-            MessageBox.Show("Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Personel Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
         }
 
