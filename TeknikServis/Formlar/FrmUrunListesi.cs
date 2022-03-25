@@ -28,7 +28,7 @@ namespace TeknikServis.Formlar
                                u.ID,
                                u.AD,
                                u.MARKA,
-                               KATEGORİ= u.TBLKATEGORI.AD,
+                               KATEGORI= u.TBLKATEGORI.AD,
                                u.STOK,
                                u.ALISFIYAT,
                                u.SATISFIYAT
@@ -49,18 +49,26 @@ namespace TeknikServis.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            TBLURUN t = new TBLURUN();
-            t.AD = TxtUrunAd.Text;
-            t.MARKA = TxtMarka.Text;
-            t.ALISFIYAT = decimal.Parse(TxtAlisFiyat.Text);
-            t.SATISFIYAT = decimal.Parse(TxtSatisFiyat.Text);
-            t.STOK = short.Parse(TxtStok.Text);
-            t.DURUM = false;
-            t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString()) ;
-            db.TBLURUN.Add(t); // entity kullandım çünkü tablolar nesne oldu
-            db.SaveChanges();
-            MessageBox.Show("Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Listele();
+            if (TxtUrunAd.Text != "" && lookUpEdit1.Text!="")
+            {
+                TBLURUN t = new TBLURUN();
+                t.AD = TxtUrunAd.Text;
+                t.MARKA = TxtMarka.Text;
+                t.ALISFIYAT = decimal.Parse(TxtAlisFiyat.Text);
+                t.SATISFIYAT = decimal.Parse(TxtSatisFiyat.Text);
+                t.STOK = short.Parse(TxtStok.Text);
+                t.DURUM = false;
+                t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
+                db.TBLURUN.Add(t); // entity kullandım çünkü tablolar nesne oldu
+                db.SaveChanges();
+                MessageBox.Show("Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Listele();
+            }
+            else
+            {
+                MessageBox.Show("Ürün Bilgilerini Kontrol Ediniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void BtnListele_Click(object sender, EventArgs e)
@@ -71,12 +79,21 @@ namespace TeknikServis.Formlar
         // ürünlerde listeleme yaptıldığında textbox'lar seçilen ürün bilgilerine focuslanır
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            TxtId.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
-            TxtUrunAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
-            TxtMarka.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
-            TxtAlisFiyat.Text = gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
-            TxtSatisFiyat.Text = gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
-            TxtStok.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+            try
+            {
+                TxtId.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+                TxtUrunAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+                TxtMarka.Text = gridView1.GetFocusedRowCellValue("MARKA").ToString();
+                TxtAlisFiyat.Text = gridView1.GetFocusedRowCellValue("ALISFIYAT").ToString();
+                TxtSatisFiyat.Text = gridView1.GetFocusedRowCellValue("SATISFIYAT").ToString();
+                TxtStok.Text = gridView1.GetFocusedRowCellValue("STOK").ToString();
+                lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("KATEGORI").ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tüm Değerlerin Girildiğine Emin Olun", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void BtnSil_Click(object sender, EventArgs e)   //silme işlemi id'e göre çalışacak
@@ -105,6 +122,16 @@ namespace TeknikServis.Formlar
 
         }
 
-        
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            TxtId.Text = "";
+            TxtUrunAd.Text = "";
+            TxtMarka.Text = "";
+            TxtAlisFiyat.Text = "";
+            TxtSatisFiyat.Text = "";
+            TxtStok.Text = "";
+            lookUpEdit1.Text = "";
+
+        }
     }
 }

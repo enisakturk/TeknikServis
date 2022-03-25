@@ -16,12 +16,15 @@ namespace TeknikServis
         {
             InitializeComponent();
         }
-
+        Formlar.FrmUrunListesi fr3;
         private void BtnUrunListesiFormu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmUrunListesi fr = new Formlar.FrmUrunListesi();
-            fr.MdiParent = this; // MdiPrent formların birbirinden bağımsız açılması yerine ana formun içinde açılmasını sağlar
-            fr.Show();
+            if (fr3 == null || fr3.IsDisposed)
+            {
+                fr3 = new Formlar.FrmUrunListesi();
+                fr3.MdiParent = this;
+                fr3.Show();
+            }
 
         }
 
@@ -31,11 +34,15 @@ namespace TeknikServis
             fr.Show();
         }
 
+        Formlar.FrmKategori fr1;
         private void BtnKategoriListe_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmKategori fr = new Formlar.FrmKategori();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr1 == null || fr1.IsDisposed)
+            {
+                fr1 = new Formlar.FrmKategori();
+                fr1.MdiParent = this;
+                fr1.Show();
+            }
         }
 
         private void BtnYeniKategori_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -198,6 +205,36 @@ namespace TeknikServis
             Formlar.FrmFaturaKalemleri fr = new Formlar.FrmFaturaKalemleri();
             fr.MdiParent = this;
             fr.Show();
+        }
+
+        private void btnRaporlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmRapor fr = new Formlar.FrmRapor();
+            fr.Show();
+        }
+
+        Formlar.FrmAnaSayfa fr;
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            if (fr==null||fr.IsDisposed)
+            {
+                fr = new Formlar.FrmAnaSayfa();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+            
+        }
+
+        private void btnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            if (fr == null || fr.IsDisposed)
+            {
+                fr = new Formlar.FrmAnaSayfa();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
     }
 }

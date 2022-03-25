@@ -41,6 +41,7 @@ namespace TeknikServis.Formlar
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -120,10 +121,10 @@ namespace TeknikServis.Formlar
             // BtnListele
             // 
             this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-            this.BtnListele.Location = new System.Drawing.Point(105, 418);
+            this.BtnListele.Location = new System.Drawing.Point(105, 411);
             this.BtnListele.Margin = new System.Windows.Forms.Padding(8);
             this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(122, 25);
+            this.BtnListele.Size = new System.Drawing.Size(122, 33);
             this.BtnListele.TabIndex = 6;
             this.BtnListele.Text = "LİSTELE";
             this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
@@ -131,10 +132,10 @@ namespace TeknikServis.Formlar
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(105, 376);
+            this.BtnGuncelle.Location = new System.Drawing.Point(105, 370);
             this.BtnGuncelle.Margin = new System.Windows.Forms.Padding(8);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(122, 25);
+            this.BtnGuncelle.Size = new System.Drawing.Size(122, 33);
             this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
@@ -142,10 +143,10 @@ namespace TeknikServis.Formlar
             // BtnSil
             // 
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(105, 335);
+            this.BtnSil.Location = new System.Drawing.Point(105, 329);
             this.BtnSil.Margin = new System.Windows.Forms.Padding(8);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(122, 25);
+            this.BtnSil.Size = new System.Drawing.Size(122, 33);
             this.BtnSil.TabIndex = 4;
             this.BtnSil.Text = "SİL";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
@@ -153,10 +154,10 @@ namespace TeknikServis.Formlar
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(105, 294);
+            this.BtnKaydet.Location = new System.Drawing.Point(105, 288);
             this.BtnKaydet.Margin = new System.Windows.Forms.Padding(8);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(122, 25);
+            this.BtnKaydet.Size = new System.Drawing.Size(122, 33);
             this.BtnKaydet.TabIndex = 3;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
@@ -208,6 +209,7 @@ namespace TeknikServis.Formlar
             this.groupControl1.Appearance.BorderColor = System.Drawing.Color.Black;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
+            this.groupControl1.Controls.Add(this.btnTemizle);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.TxtId);
             this.groupControl1.Controls.Add(this.BtnListele);
@@ -222,6 +224,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Size = new System.Drawing.Size(265, 640);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "KATEGORİ İŞLEMLERİ";
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(105, 451);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(8);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(122, 33);
+            this.btnTemizle.TabIndex = 7;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // groupControl2
             // 
@@ -463,7 +476,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmKategori";
-            this.Text = "FrmKategori";
+            this.Text = "Kategoriler";
             this.Load += new System.EventHandler(this.FrmKategori_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
@@ -539,5 +552,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
         private DevExpress.XtraEditors.GroupControl groupControl11;
         private DevExpress.XtraEditors.PictureEdit pictureEdit10;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
     }
 }

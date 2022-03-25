@@ -16,16 +16,15 @@ namespace TeknikServis.Formlar
         {
             InitializeComponent();
         }
-
+        DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            DbTeknikServisEntities db = new DbTeknikServisEntities();
             TBLURUN t = new TBLURUN();
             t.AD = txtUrunAd.Text;
             t.ALISFIYAT = decimal.Parse(txtAlısFiyat.Text);
             t.SATISFIYAT = decimal.Parse(txtSatısFiyat.Text);
             t.STOK = short.Parse(txtStok.Text);
-            t.KATEGORI = byte.Parse(txtKategori.Text);
+            t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
             t.MARKA = txtMarka.Text;
             db.TBLURUN.Add(t);
             db.SaveChanges();
@@ -40,6 +39,59 @@ namespace TeknikServis.Formlar
             
         }
 
-       
+        private void txtUrunAd_Click(object sender, EventArgs e)
+        {
+            txtUrunAd.Text = "";
+            txtUrunAd.Focus();
+        }
+
+        private void txtMarka_Click(object sender, EventArgs e)
+        {
+            txtMarka.Text = "";
+            txtMarka.Focus();
+        }
+
+        private void txtAlısFiyat_Click(object sender, EventArgs e)
+        {
+            txtAlısFiyat.Text = "";
+            txtAlısFiyat.Focus();
+        }
+
+        private void txtSatısFiyat_Click(object sender, EventArgs e)
+        {
+            txtSatısFiyat.Text = "";
+            txtSatısFiyat.Focus();
+        }
+
+        private void txtStok_Click(object sender, EventArgs e)
+        {
+            txtStok.Text = "";
+            txtStok.Focus();
+        }
+
+        private void FrmYeniUrun_Load(object sender, EventArgs e)
+        {
+            lookUpEdit1.Properties.DataSource = (from u in db.TBLKATEGORI
+                                                 select new
+                                                 {
+                                                     u.ID,
+                                                     u.AD
+                                                 }).ToList();
+        }
+
+        private void txtAlısFiyat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtSatısFiyat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtStok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }
