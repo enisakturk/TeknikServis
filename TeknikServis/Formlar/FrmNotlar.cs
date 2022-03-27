@@ -33,6 +33,7 @@ namespace TeknikServis.Formlar
             TBLNOTLARIM t = new TBLNOTLARIM();
             t.BASLIK = TxtBaşlık.Text;
             t.ICERIK = txtİçerik.Text;
+            t.TARIH = DateTime.Parse(txtTarih.Text);
             t.OKUMA = false;
             db.TBLNOTLARIM.Add(t);
             db.SaveChanges();
@@ -61,6 +62,14 @@ namespace TeknikServis.Formlar
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             TxtId.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtİçerik.Text = "";
+            TxtBaşlık.Text = "";
+            txtTarih.Text = "";
+            checkEdit1.Checked = false;
         }
     }
 }

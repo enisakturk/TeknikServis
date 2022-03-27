@@ -18,7 +18,7 @@ namespace TeknikServis
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             WindowsFormsSettings.UseDXDialogs = DevExpress.Utils.DefaultBoolean.True;
-            Application.Run(new Form1());
+            Application.Run(new FrmGiriş());
         }
     }
 }

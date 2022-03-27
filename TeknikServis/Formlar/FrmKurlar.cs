@@ -19,7 +19,7 @@ namespace TeknikServis.Formlar
 
         private void FrmKurlar_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://www.tcmb.gov.tr/kurlar/today.xml");
+            webBrowser1.Navigate("https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+page+site+area/bugun");
         }
     }
 }

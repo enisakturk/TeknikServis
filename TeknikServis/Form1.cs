@@ -141,11 +141,15 @@ namespace TeknikServis
             System.Diagnostics.Process.Start("Calc.exe");
         }
 
+        Formlar.FrmKurlar fr16;
         private void btnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmKurlar fr = new Formlar.FrmKurlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr16 == null || fr16.IsDisposed)
+            {
+                fr16 = new Formlar.FrmKurlar();
+                fr16.MdiParent = this;
+                fr16.Show();
+            }
         }
 
         private void btnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -158,11 +162,15 @@ namespace TeknikServis
             System.Diagnostics.Process.Start("excel");
         }
 
+        Formlar.FrmNotlar fr15;
         private void btnNotListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmNotlar fr = new Formlar.FrmNotlar();
-            fr.MdiParent = this;
-            fr.Show();
+            if (fr15 == null || fr15.IsDisposed)
+            {
+                fr15 = new Formlar.FrmNotlar();
+                fr15.MdiParent = this;
+                fr15.Show();
+            }
         }
 
         Formlar.FrmArızaListesi fr5;
@@ -283,6 +291,39 @@ namespace TeknikServis
                 fr.MdiParent = this;
                 fr.Show();
             }
+        }
+
+        private void btnYardım_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MessageBox.Show("Bu Proje Enis Aktürk Tarafından Tasarlanmıştır", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        İletişim.FrmRehber fr17;
+        private void btnRehber_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr17 == null || fr17.IsDisposed)
+            {
+                fr17 = new İletişim.FrmRehber();
+                fr17.MdiParent = this;
+                fr17.Show();
+            }
+        }
+
+        İletişim.FrmGelenMesajlar fr18;
+        private void btnGelenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr18 == null || fr18.IsDisposed)
+            {
+                fr18 = new İletişim.FrmGelenMesajlar();
+                fr18.MdiParent = this;
+                fr18.Show();
+            }
+        }
+
+        private void btnYeniMail_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            İletişim.FrmMail fr = new İletişim.FrmMail();
+            fr.Show();
         }
     }
 }
