@@ -41,9 +41,11 @@ namespace TeknikServis.Formlar
             this.txtTarih = new DevExpress.XtraEditors.TextEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbDurum = new System.Windows.Forms.ComboBox();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuncelle
@@ -197,12 +199,31 @@ namespace TeknikServis.Formlar
             this.cmbDurum.TabIndex = 3;
             this.cmbDurum.Text = "Durum Seçin";
             // 
+            // textEdit1
+            // 
+            this.textEdit1.EditValue = "Seri No";
+            this.textEdit1.Location = new System.Drawing.Point(222, 64);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(2);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit1.Properties.Mask.EditMask = "AAAAA";
+            this.textEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.textEdit1.Size = new System.Drawing.Size(49, 20);
+            this.textEdit1.TabIndex = 142;
+            // 
             // FrmArızalıUrunAcıklama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(344, 421);
+            this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.cmbDurum);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -223,6 +244,7 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +263,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.TextEdit txtTarih;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cmbDurum;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }

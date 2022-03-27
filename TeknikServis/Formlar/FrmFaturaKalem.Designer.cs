@@ -49,6 +49,7 @@ namespace TeknikServis.Formlar
             this.txtAdet = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtDetayId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -86,7 +87,7 @@ namespace TeknikServis.Formlar
             // btnGuncel
             // 
             this.btnGuncel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncel.ImageOptions.Image")));
-            this.btnGuncel.Location = new System.Drawing.Point(133, 500);
+            this.btnGuncel.Location = new System.Drawing.Point(133, 485);
             this.btnGuncel.Margin = new System.Windows.Forms.Padding(6);
             this.btnGuncel.Name = "btnGuncel";
             this.btnGuncel.Size = new System.Drawing.Size(146, 30);
@@ -98,7 +99,7 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(56, 344);
+            this.labelControl5.Location = new System.Drawing.Point(56, 208);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(61, 13);
@@ -108,7 +109,7 @@ namespace TeknikServis.Formlar
             // btnGuncelle
             // 
             this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(133, 463);
+            this.btnGuncelle.Location = new System.Drawing.Point(133, 448);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(146, 30);
@@ -119,7 +120,7 @@ namespace TeknikServis.Formlar
             // btnSil
             // 
             this.btnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.ImageOptions.Image")));
-            this.btnSil.Location = new System.Drawing.Point(133, 426);
+            this.btnSil.Location = new System.Drawing.Point(133, 411);
             this.btnSil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(146, 30);
@@ -130,7 +131,7 @@ namespace TeknikServis.Formlar
             // btnKaydet
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
-            this.btnKaydet.Location = new System.Drawing.Point(133, 391);
+            this.btnKaydet.Location = new System.Drawing.Point(133, 376);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(146, 30);
@@ -142,7 +143,7 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(81, 280);
+            this.labelControl3.Location = new System.Drawing.Point(81, 303);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(36, 13);
@@ -153,7 +154,7 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(84, 244);
+            this.labelControl4.Location = new System.Drawing.Point(84, 267);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(33, 13);
@@ -162,7 +163,7 @@ namespace TeknikServis.Formlar
             // 
             // txtUrun
             // 
-            this.txtUrun.Location = new System.Drawing.Point(133, 210);
+            this.txtUrun.Location = new System.Drawing.Point(133, 233);
             this.txtUrun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUrun.Name = "txtUrun";
             this.txtUrun.Properties.Mask.EditMask = "A";
@@ -173,7 +174,7 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(82, 213);
+            this.labelControl2.Location = new System.Drawing.Point(82, 236);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(35, 13);
@@ -184,7 +185,7 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(77, 314);
+            this.labelControl1.Location = new System.Drawing.Point(77, 337);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(40, 13);
@@ -199,6 +200,7 @@ namespace TeknikServis.Formlar
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
             this.groupControl1.Appearance.Options.UseForeColor = true;
+            this.groupControl1.Controls.Add(this.btnTemizle);
             this.groupControl1.Controls.Add(this.txtFaturaId);
             this.groupControl1.Controls.Add(this.txtTutar);
             this.groupControl1.Controls.Add(this.txtFiyat);
@@ -220,11 +222,11 @@ namespace TeknikServis.Formlar
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(321, 697);
             this.groupControl1.TabIndex = 15;
-            this.groupControl1.Text = "FATURA KALEM İŞLEMLERİ";
+            this.groupControl1.Text = "FATURA ÜRÜN İŞLEMLERİ";
             // 
             // txtFaturaId
             // 
-            this.txtFaturaId.Location = new System.Drawing.Point(133, 341);
+            this.txtFaturaId.Location = new System.Drawing.Point(133, 205);
             this.txtFaturaId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFaturaId.Name = "txtFaturaId";
             this.txtFaturaId.Properties.Mask.EditMask = "A";
@@ -233,7 +235,7 @@ namespace TeknikServis.Formlar
             // 
             // txtTutar
             // 
-            this.txtTutar.Location = new System.Drawing.Point(133, 307);
+            this.txtTutar.Location = new System.Drawing.Point(133, 330);
             this.txtTutar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTutar.Name = "txtTutar";
             this.txtTutar.Properties.Mask.EditMask = "A";
@@ -242,7 +244,7 @@ namespace TeknikServis.Formlar
             // 
             // txtFiyat
             // 
-            this.txtFiyat.Location = new System.Drawing.Point(133, 277);
+            this.txtFiyat.Location = new System.Drawing.Point(133, 300);
             this.txtFiyat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFiyat.Name = "txtFiyat";
             this.txtFiyat.Properties.Mask.EditMask = "A";
@@ -251,7 +253,7 @@ namespace TeknikServis.Formlar
             // 
             // txtAdet
             // 
-            this.txtAdet.Location = new System.Drawing.Point(133, 241);
+            this.txtAdet.Location = new System.Drawing.Point(133, 264);
             this.txtAdet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAdet.Name = "txtAdet";
             this.txtAdet.Properties.Mask.EditMask = "A";
@@ -281,6 +283,17 @@ namespace TeknikServis.Formlar
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(133, 522);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(146, 30);
+            this.btnTemizle.TabIndex = 20;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // FrmFaturaKalem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,7 +303,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmFaturaKalem";
-            this.Text = "FrmFaturaKalem";
+            this.Text = "Fatura Ürün";
             this.Load += new System.EventHandler(this.FrmFaturaKalem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtDetayId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).EndInit();
@@ -328,5 +341,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.TextEdit txtTutar;
         private DevExpress.XtraEditors.TextEdit txtFiyat;
         private DevExpress.XtraEditors.TextEdit txtAdet;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
     }
 }

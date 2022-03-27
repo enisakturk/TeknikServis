@@ -38,12 +38,20 @@ namespace TeknikServis.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            TBLDEPARTMAN t = new TBLDEPARTMAN();
-            t.AD = TxtAd.Text;
-            db.TBLDEPARTMAN.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Departman Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Listele();
+            if (TxtAd.Text==""||TxtAd.Text.Length>=51)
+            {
+                MessageBox.Show("Departman Kayıt Edilemedi", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLDEPARTMAN t = new TBLDEPARTMAN();
+                t.AD = TxtAd.Text;
+                db.TBLDEPARTMAN.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Departman Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Listele();
+            }
+            
         }
 
         private void BtnSil_Click(object sender, EventArgs e)

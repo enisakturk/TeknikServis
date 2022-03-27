@@ -84,6 +84,7 @@ namespace TeknikServis.Formlar
             this.txtKategoriAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtKategoriAd.Size = new System.Drawing.Size(170, 26);
             this.txtKategoriAd.TabIndex = 1;
+            this.txtKategoriAd.Click += new System.EventHandler(this.txtKategoriAd_Click);
             // 
             // pictureEdit1
             // 

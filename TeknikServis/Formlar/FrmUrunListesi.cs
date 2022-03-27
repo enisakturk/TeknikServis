@@ -49,7 +49,7 @@ namespace TeknikServis.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            if (TxtUrunAd.Text != "" && lookUpEdit1.Text!="")
+            if (TxtUrunAd.Text != "" && lookUpEdit1.Text!=""||lookUpEdit1.Text== "Kategori Seç")
             {
                 TBLURUN t = new TBLURUN();
                 t.AD = TxtUrunAd.Text;

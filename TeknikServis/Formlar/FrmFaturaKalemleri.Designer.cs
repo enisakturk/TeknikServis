@@ -64,7 +64,7 @@ namespace TeknikServis.Formlar
             // 
             // btnAra
             // 
-            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAra.ImageOptions.Image")));
             this.btnAra.Location = new System.Drawing.Point(313, 26);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(94, 29);
@@ -78,6 +78,7 @@ namespace TeknikServis.Formlar
             this.txtFaturaId.Name = "txtFaturaId";
             this.txtFaturaId.Size = new System.Drawing.Size(172, 20);
             this.txtFaturaId.TabIndex = 1;
+            this.txtFaturaId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFaturaId_KeyPress);
             // 
             // labelControl3
             // 
@@ -102,7 +103,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmFaturaKalemleri";
-            this.Text = "FrmFaturaKalemleri";
+            this.Text = "Ürün Takip";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFaturaId.Properties)).EndInit();

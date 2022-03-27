@@ -38,16 +38,24 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLFATURADETAY t = new TBLFATURADETAY();
-            t.URUN = txtUrun.Text;
-            t.ADET = short.Parse(txtAdet.Text);
-            t.FIYAT = decimal.Parse(txtFiyat.Text);
-            t.TUTAR = decimal.Parse(txtTutar.Text);
-            t.FATURAID = int.Parse(txtFaturaId.Text);
-            db.TBLFATURADETAY.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Faturaya Ait Kalem Başarıyla Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Listele();
+            if (txtFaturaId.Text==""||txtUrun.Text==""|| txtAdet.Text==""|| txtTutar.Text=="")
+            {
+                MessageBox.Show("Faturaya Ait Ürünler Kayıt Edilemedi", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLFATURADETAY t = new TBLFATURADETAY();
+                t.URUN = txtUrun.Text;
+                t.ADET = short.Parse(txtAdet.Text);
+                t.FIYAT = decimal.Parse(txtFiyat.Text);
+                t.TUTAR = decimal.Parse(txtTutar.Text);
+                t.FATURAID = int.Parse(txtFaturaId.Text);
+                db.TBLFATURADETAY.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Faturaya Ait Ürünler Başarıyla Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Listele();
+            }
+           
         }
 
         private void btnGuncel_Click(object sender, EventArgs e)
@@ -87,6 +95,16 @@ namespace TeknikServis.Formlar
             txtFiyat.Text = gridView1.GetFocusedRowCellValue("FIYAT").ToString();
             txtTutar.Text = gridView1.GetFocusedRowCellValue("TUTAR").ToString();
             txtFaturaId.Text = gridView1.GetFocusedRowCellValue("FATURAID").ToString();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtDetayId.Text = "";
+            txtUrun.Text ="";
+            txtAdet.Text = "";
+            txtFiyat.Text = "";
+            txtTutar.Text = "";
+            txtFaturaId.Text = "";
         }
     }
 }

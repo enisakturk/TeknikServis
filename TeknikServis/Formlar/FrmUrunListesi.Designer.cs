@@ -35,6 +35,7 @@ namespace TeknikServis.Formlar
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtUrunAd = new DevExpress.XtraEditors.TextEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -51,7 +52,6 @@ namespace TeknikServis.Formlar
             this.TxtAlisFiyat = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.TxtMarka = new DevExpress.XtraEditors.TextEdit();
-            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).BeginInit();
@@ -138,6 +138,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "ÜRÜN İŞLEMLERİ";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(100, 580);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(132, 30);
+            this.btnTemizle.TabIndex = 12;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // labelControl7
             // 
             this.labelControl7.Location = new System.Drawing.Point(53, 194);
@@ -211,13 +222,13 @@ namespace TeknikServis.Formlar
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.EditValue = "";
             this.lookUpEdit1.Location = new System.Drawing.Point(100, 378);
             this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "Kategori Seç";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(132, 20);
             this.lookUpEdit1.TabIndex = 7;
@@ -289,17 +300,6 @@ namespace TeknikServis.Formlar
             this.TxtMarka.Name = "TxtMarka";
             this.TxtMarka.Size = new System.Drawing.Size(132, 20);
             this.TxtMarka.TabIndex = 3;
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(100, 580);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(132, 30);
-            this.btnTemizle.TabIndex = 12;
-            this.btnTemizle.Text = "TEMİZLE";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // FrmUrunListesi
             // 

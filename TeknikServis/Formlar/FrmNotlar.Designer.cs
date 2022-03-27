@@ -268,7 +268,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmNotlar";
-            this.Text = "FrmNotlar";
+            this.Text = "Notlar";
             this.Load += new System.EventHandler(this.FrmNotlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtİçerik.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();

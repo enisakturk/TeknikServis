@@ -71,7 +71,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(39, 91);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -84,7 +84,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtUrunAd.EditValue = "Ürün Adı";
             this.txtUrunAd.Location = new System.Drawing.Point(74, 94);
-            this.txtUrunAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunAd.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunAd.Name = "txtUrunAd";
             this.txtUrunAd.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,7 +102,7 @@ namespace TeknikServis.Formlar
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(74, 121);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 3);
             this.panel1.TabIndex = 2;
@@ -112,7 +112,7 @@ namespace TeknikServis.Formlar
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(74, 188);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(192, 3);
             this.panel2.TabIndex = 5;
@@ -121,7 +121,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtMarka.EditValue = "Markası";
             this.txtMarka.Location = new System.Drawing.Point(74, 161);
-            this.txtMarka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMarka.Margin = new System.Windows.Forms.Padding(2);
             this.txtMarka.Name = "txtMarka";
             this.txtMarka.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtMarka.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,7 +138,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
             this.pictureEdit2.Location = new System.Drawing.Point(39, 158);
-            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -152,7 +152,7 @@ namespace TeknikServis.Formlar
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(74, 254);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(192, 3);
             this.panel3.TabIndex = 8;
@@ -161,7 +161,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
             this.pictureEdit3.Location = new System.Drawing.Point(39, 224);
-            this.pictureEdit3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -175,7 +175,7 @@ namespace TeknikServis.Formlar
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(74, 321);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(192, 3);
             this.panel4.TabIndex = 11;
@@ -184,7 +184,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtAlısFiyat.EditValue = "Alış Fiyatı";
             this.txtAlısFiyat.Location = new System.Drawing.Point(74, 295);
-            this.txtAlısFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAlısFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtAlısFiyat.Name = "txtAlısFiyat";
             this.txtAlısFiyat.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtAlısFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,7 +202,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
             this.pictureEdit4.Location = new System.Drawing.Point(39, 289);
-            this.pictureEdit4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
@@ -216,7 +216,7 @@ namespace TeknikServis.Formlar
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Location = new System.Drawing.Point(74, 454);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(192, 3);
             this.panel5.TabIndex = 14;
@@ -225,7 +225,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtStok.EditValue = "Stok";
             this.txtStok.Location = new System.Drawing.Point(73, 427);
-            this.txtStok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStok.Margin = new System.Windows.Forms.Padding(2);
             this.txtStok.Name = "txtStok";
             this.txtStok.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtStok.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -243,7 +243,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
             this.pictureEdit5.Location = new System.Drawing.Point(39, 421);
-            this.pictureEdit5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit5.Properties.Appearance.Options.UseBackColor = true;
@@ -257,7 +257,7 @@ namespace TeknikServis.Formlar
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Location = new System.Drawing.Point(74, 388);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(192, 3);
             this.panel6.TabIndex = 17;
@@ -266,7 +266,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtSatısFiyat.EditValue = "Satış Fiyatı";
             this.txtSatısFiyat.Location = new System.Drawing.Point(74, 362);
-            this.txtSatısFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSatısFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtSatısFiyat.Name = "txtSatısFiyat";
             this.txtSatısFiyat.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtSatısFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -284,7 +284,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
             this.pictureEdit6.Location = new System.Drawing.Point(39, 354);
-            this.pictureEdit6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit6.Name = "pictureEdit6";
             this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
@@ -298,7 +298,7 @@ namespace TeknikServis.Formlar
             this.textEdit7.EditValue = "Yeni Ürün Ekleme";
             this.textEdit7.Enabled = false;
             this.textEdit7.Location = new System.Drawing.Point(91, 27);
-            this.textEdit7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textEdit7.Margin = new System.Windows.Forms.Padding(2);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -314,7 +314,7 @@ namespace TeknikServis.Formlar
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
             this.btnKaydet.Location = new System.Drawing.Point(104, 492);
-            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(114, 28);
             this.btnKaydet.TabIndex = 7;
@@ -326,7 +326,7 @@ namespace TeknikServis.Formlar
             this.kapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapat.EditValue = ((object)(resources.GetObject("kapat.EditValue")));
             this.kapat.Location = new System.Drawing.Point(280, 10);
-            this.kapat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kapat.Margin = new System.Windows.Forms.Padding(2);
             this.kapat.Name = "kapat";
             this.kapat.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.kapat.Properties.Appearance.Options.UseBackColor = true;
@@ -338,7 +338,6 @@ namespace TeknikServis.Formlar
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.EditValue = "";
             this.lookUpEdit1.Location = new System.Drawing.Point(75, 225);
             this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.lookUpEdit1.Name = "lookUpEdit1";
@@ -352,6 +351,7 @@ namespace TeknikServis.Formlar
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "Kategori Seç";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(191, 26);
             this.lookUpEdit1.TabIndex = 3;
@@ -384,7 +384,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.txtUrunAd);
             this.Controls.Add(this.pictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmYeniUrun";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmYeniUrun";

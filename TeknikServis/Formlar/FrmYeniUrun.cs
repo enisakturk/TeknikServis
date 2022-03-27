@@ -19,7 +19,7 @@ namespace TeknikServis.Formlar
         DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            if (lookUpEdit1.Text==""||txtUrunAd.Text==""||txtMarka.Text=="")
+            if (lookUpEdit1.Text==""|| lookUpEdit1.Text== "Kategori Seç"|| txtUrunAd.Text==""||txtMarka.Text=="")
             {
                 MessageBox.Show("İlgili Alanları Eksizksiz Doldurun", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

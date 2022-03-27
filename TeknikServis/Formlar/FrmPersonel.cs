@@ -26,7 +26,7 @@ namespace TeknikServis.Formlar
                                u.ID,
                                u.AD,
                                u.SOYAD,
-                               u.DEPARTMAN,
+                               DEPARTMAN=u.TBLDEPARTMAN.AD,
                                u.MAIL,
                                u.TELEFON
                            };
@@ -47,16 +47,24 @@ namespace TeknikServis.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            TBLPERSONEL t = new TBLPERSONEL();
-            t.AD = TxtAd.Text;
-            t.SOYAD = txtSoyad.Text;
-            t.TELEFON = txt_tlfn.Text;
-            t.MAIL = txt_mail.Text;
-            t.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
-            db.TBLPERSONEL.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Personel Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Listele();
+            if (TxtAd.Text==""||txtSoyad.Text==""||txt_tlfn.Text==""||txt_mail.Text==""||lookUpEdit1.Text==""||lookUpEdit1.Text== "Departman Seçin")
+            {
+                MessageBox.Show("Personel Sisteme Eklenemedi", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLPERSONEL t = new TBLPERSONEL();
+                t.AD = TxtAd.Text;
+                t.SOYAD = txtSoyad.Text;
+                t.TELEFON = txt_tlfn.Text;
+                t.MAIL = txt_mail.Text;
+                t.DEPARTMAN = byte.Parse(lookUpEdit1.EditValue.ToString());
+                db.TBLPERSONEL.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Personel Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Listele();
+            }
+            
         }
 
         private void BtnListele_Click(object sender, EventArgs e)
@@ -95,6 +103,16 @@ namespace TeknikServis.Formlar
             txtSoyad.Text = gridView1.GetFocusedRowCellValue("SOYAD").ToString();
             txt_mail.Text = gridView1.GetFocusedRowCellValue("MAIL").ToString();
             txt_tlfn.Text = gridView1.GetFocusedRowCellValue("TELEFON").ToString();
+            lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("DEPARTMAN").ToString();
+        }
+
+        private void btn_Temizle_Click(object sender, EventArgs e)
+        {
+            TxtId.Text = "";
+            TxtAd.Text = "";
+            txtSoyad.Text = "";
+            txt_tlfn.Text = "";
+            txt_mail.Text = "";
         }
     }
 }

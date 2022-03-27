@@ -23,18 +23,33 @@ namespace TeknikServis.Formlar
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtFaturaId.Text);
-            var degerler = (from u in db.TBLFATURADETAY
-                            select new
-                            {
-                                u.FATURADETAYID,
-                                u.URUN,
-                                u.ADET,
-                                u.FIYAT,
-                                u.TUTAR,
-                                u.FATURAID,
-                            }).Where(x=>x.FATURAID==id);
-            gridControl1.DataSource = degerler.ToList();
+            if (txtFaturaId.Text=="")
+            {
+                MessageBox.Show("Boş Geçilemez", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                int id = Convert.ToInt32(txtFaturaId.Text);
+                var degerler = (from u in db.TBLFATURADETAY
+                                select new
+                                {
+                                    u.FATURADETAYID,
+                                    u.URUN,
+                                    u.ADET,
+                                    u.FIYAT,
+                                    u.TUTAR,
+                                    u.FATURAID,
+                                }).Where(x => x.FATURAID == id);
+                gridControl1.DataSource = degerler.ToList();
+            }
+           
+        }
+
+        private void txtFaturaId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            {
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            }
         }
     }
 }

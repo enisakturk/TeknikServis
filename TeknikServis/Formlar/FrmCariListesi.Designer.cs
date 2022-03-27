@@ -31,16 +31,17 @@ namespace TeknikServis.Formlar
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCariListesi));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.txtBanka = new DevExpress.XtraEditors.TextEdit();
+            this.lookUpİl = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtStatü = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtVergiNo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtAdress = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtVergiDairesi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.TxtId = new DevExpress.XtraEditors.TextEdit();
             this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
@@ -48,42 +49,42 @@ namespace TeknikServis.Formlar
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpİlçe = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAlisFiyat = new DevExpress.XtraEditors.TextEdit();
+            this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtMarka = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtUrunAd = new DevExpress.XtraEditors.TextEdit();
+            this.TxtCariAd = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.toplam_urun = new DevExpress.XtraEditors.LabelControl();
+            this.toplam_musteri = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.toplam_ılce = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.toplam_il = new DevExpress.XtraEditors.LabelControl();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.enfazla_musteri_il = new DevExpress.XtraEditors.LabelControl();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpİl.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStatü.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiNo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMarka.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpİlçe.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCariAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,16 +100,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Appearance.BorderColor = System.Drawing.Color.Black;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
-            this.groupControl1.Controls.Add(this.textEdit5);
-            this.groupControl1.Controls.Add(this.lookUpEdit2);
+            this.groupControl1.Controls.Add(this.btnTemizle);
+            this.groupControl1.Controls.Add(this.txtBanka);
+            this.groupControl1.Controls.Add(this.lookUpİl);
             this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.txtStatü);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.txtVergiNo);
             this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.txtAdress);
             this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtVergiDairesi);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.TxtId);
             this.groupControl1.Controls.Add(this.BtnListele);
@@ -116,58 +118,71 @@ namespace TeknikServis.Formlar
             this.groupControl1.Controls.Add(this.BtnSil);
             this.groupControl1.Controls.Add(this.BtnKaydet);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.lookUpEdit1);
+            this.groupControl1.Controls.Add(this.lookUpİlçe);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.TxtAlisFiyat);
+            this.groupControl1.Controls.Add(this.TxtTelefon);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.TxtMarka);
+            this.groupControl1.Controls.Add(this.TxtSoyad);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Controls.Add(this.TxtUrunAd);
+            this.groupControl1.Controls.Add(this.TxtCariAd);
             this.groupControl1.Location = new System.Drawing.Point(0, 1);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(6);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(250, 557);
             this.groupControl1.TabIndex = 5;
-            this.groupControl1.Text = "ÜRÜN İŞLEMLERİ";
+            this.groupControl1.Text = "MÜŞTERİ İŞLEMLERİ";
             // 
-            // textEdit5
+            // btnTemizle
             // 
-            this.textEdit5.Location = new System.Drawing.Point(88, 224);
-            this.textEdit5.Margin = new System.Windows.Forms.Padding(6);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(147, 20);
-            this.textEdit5.TabIndex = 7;
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(88, 501);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(147, 26);
+            this.btnTemizle.TabIndex = 16;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
-            // lookUpEdit2
+            // txtBanka
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(88, 177);
-            this.lookUpEdit2.Margin = new System.Windows.Forms.Padding(6);
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtBanka.Location = new System.Drawing.Point(88, 224);
+            this.txtBanka.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBanka.Name = "txtBanka";
+            this.txtBanka.Size = new System.Drawing.Size(147, 20);
+            this.txtBanka.TabIndex = 7;
+            // 
+            // lookUpİl
+            // 
+            this.lookUpİl.Location = new System.Drawing.Point(88, 177);
+            this.lookUpİl.Margin = new System.Windows.Forms.Padding(6);
+            this.lookUpİl.Name = "lookUpİl";
+            this.lookUpİl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.DisplayMember = "AD";
-            this.lookUpEdit2.Properties.ValueMember = "ID";
-            this.lookUpEdit2.Size = new System.Drawing.Size(147, 20);
-            this.lookUpEdit2.TabIndex = 5;
+            this.lookUpİl.Properties.DisplayMember = "sehir";
+            this.lookUpİl.Properties.NullText = "İl Seçin";
+            this.lookUpİl.Properties.ValueMember = "id";
+            this.lookUpİl.Size = new System.Drawing.Size(147, 20);
+            this.lookUpİl.TabIndex = 5;
+            this.lookUpİl.EditValueChanged += new System.EventHandler(this.lookUpİl_EditValueChanged);
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(46, 298);
+            this.labelControl11.Location = new System.Drawing.Point(48, 298);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(36, 13);
             this.labelControl11.TabIndex = 25;
             this.labelControl11.Text = "STATÜ:\r\n";
             // 
-            // textEdit4
+            // txtStatü
             // 
-            this.textEdit4.Location = new System.Drawing.Point(88, 296);
-            this.textEdit4.Margin = new System.Windows.Forms.Padding(6);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(147, 20);
-            this.textEdit4.TabIndex = 10;
+            this.txtStatü.Location = new System.Drawing.Point(88, 296);
+            this.txtStatü.Margin = new System.Windows.Forms.Padding(6);
+            this.txtStatü.Name = "txtStatü";
+            this.txtStatü.Size = new System.Drawing.Size(147, 20);
+            this.txtStatü.TabIndex = 10;
             // 
             // labelControl10
             // 
@@ -178,13 +193,13 @@ namespace TeknikServis.Formlar
             this.labelControl10.TabIndex = 23;
             this.labelControl10.Text = "VERGİ NO:\r\n";
             // 
-            // textEdit3
+            // txtVergiNo
             // 
-            this.textEdit3.Location = new System.Drawing.Point(88, 272);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(6);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(147, 20);
-            this.textEdit3.TabIndex = 9;
+            this.txtVergiNo.Location = new System.Drawing.Point(88, 272);
+            this.txtVergiNo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtVergiNo.Name = "txtVergiNo";
+            this.txtVergiNo.Size = new System.Drawing.Size(147, 20);
+            this.txtVergiNo.TabIndex = 9;
             // 
             // labelControl9
             // 
@@ -195,30 +210,30 @@ namespace TeknikServis.Formlar
             this.labelControl9.TabIndex = 21;
             this.labelControl9.Text = "ADRES:\r\n";
             // 
-            // textEdit2
+            // txtAdress
             // 
-            this.textEdit2.Location = new System.Drawing.Point(88, 319);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(6);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(147, 20);
-            this.textEdit2.TabIndex = 11;
+            this.txtAdress.Location = new System.Drawing.Point(88, 319);
+            this.txtAdress.Margin = new System.Windows.Forms.Padding(6);
+            this.txtAdress.Name = "txtAdress";
+            this.txtAdress.Size = new System.Drawing.Size(147, 20);
+            this.txtAdress.TabIndex = 11;
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(11, 251);
+            this.labelControl8.Location = new System.Drawing.Point(7, 251);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(78, 13);
             this.labelControl8.TabIndex = 19;
             this.labelControl8.Text = "VERGİ DAİRESİ:\r\n";
             // 
-            // textEdit1
+            // txtVergiDairesi
             // 
-            this.textEdit1.Location = new System.Drawing.Point(88, 249);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(6);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(147, 20);
-            this.textEdit1.TabIndex = 8;
+            this.txtVergiDairesi.Location = new System.Drawing.Point(88, 249);
+            this.txtVergiDairesi.Margin = new System.Windows.Forms.Padding(6);
+            this.txtVergiDairesi.Name = "txtVergiDairesi";
+            this.txtVergiDairesi.Size = new System.Drawing.Size(147, 20);
+            this.txtVergiDairesi.TabIndex = 8;
             // 
             // labelControl7
             // 
@@ -247,6 +262,7 @@ namespace TeknikServis.Formlar
             this.BtnListele.Size = new System.Drawing.Size(147, 26);
             this.BtnListele.TabIndex = 15;
             this.BtnListele.Text = "LİSTELE";
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnGuncelle
             // 
@@ -257,6 +273,7 @@ namespace TeknikServis.Formlar
             this.BtnGuncelle.Size = new System.Drawing.Size(147, 26);
             this.BtnGuncelle.TabIndex = 14;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
@@ -267,6 +284,7 @@ namespace TeknikServis.Formlar
             this.BtnSil.Size = new System.Drawing.Size(147, 26);
             this.BtnSil.TabIndex = 13;
             this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnKaydet
             // 
@@ -277,6 +295,7 @@ namespace TeknikServis.Formlar
             this.BtnKaydet.Size = new System.Drawing.Size(147, 26);
             this.BtnKaydet.TabIndex = 12;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // labelControl6
             // 
@@ -287,17 +306,18 @@ namespace TeknikServis.Formlar
             this.labelControl6.TabIndex = 12;
             this.labelControl6.Text = "BANKA :\r\n";
             // 
-            // lookUpEdit1
+            // lookUpİlçe
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(88, 202);
-            this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(6);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpİlçe.Location = new System.Drawing.Point(88, 202);
+            this.lookUpİlçe.Margin = new System.Windows.Forms.Padding(6);
+            this.lookUpİlçe.Name = "lookUpİlçe";
+            this.lookUpİlçe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.DisplayMember = "AD";
-            this.lookUpEdit1.Properties.ValueMember = "ID";
-            this.lookUpEdit1.Size = new System.Drawing.Size(147, 20);
-            this.lookUpEdit1.TabIndex = 6;
+            this.lookUpİlçe.Properties.DisplayMember = "ilce";
+            this.lookUpİlçe.Properties.NullText = "İlçe Seçin";
+            this.lookUpİlçe.Properties.ValueMember = "id";
+            this.lookUpİlçe.Size = new System.Drawing.Size(147, 20);
+            this.lookUpİlçe.TabIndex = 6;
             // 
             // labelControl5
             // 
@@ -326,15 +346,15 @@ namespace TeknikServis.Formlar
             this.labelControl3.TabIndex = 5;
             this.labelControl3.Text = "TELEFON:\r\n";
             // 
-            // TxtAlisFiyat
+            // TxtTelefon
             // 
-            this.TxtAlisFiyat.Location = new System.Drawing.Point(88, 153);
-            this.TxtAlisFiyat.Margin = new System.Windows.Forms.Padding(6);
-            this.TxtAlisFiyat.Name = "TxtAlisFiyat";
-            this.TxtAlisFiyat.Properties.Mask.EditMask = "(999) 000-0000";
-            this.TxtAlisFiyat.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.TxtAlisFiyat.Size = new System.Drawing.Size(147, 20);
-            this.TxtAlisFiyat.TabIndex = 4;
+            this.TxtTelefon.Location = new System.Drawing.Point(88, 153);
+            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtTelefon.Name = "TxtTelefon";
+            this.TxtTelefon.Properties.Mask.EditMask = "(999) 000-0000";
+            this.TxtTelefon.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.TxtTelefon.Size = new System.Drawing.Size(147, 20);
+            this.TxtTelefon.TabIndex = 4;
             // 
             // labelControl2
             // 
@@ -345,13 +365,13 @@ namespace TeknikServis.Formlar
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "SOYAD:\r\n";
             // 
-            // TxtMarka
+            // TxtSoyad
             // 
-            this.TxtMarka.Location = new System.Drawing.Point(88, 128);
-            this.TxtMarka.Margin = new System.Windows.Forms.Padding(6);
-            this.TxtMarka.Name = "TxtMarka";
-            this.TxtMarka.Size = new System.Drawing.Size(147, 20);
-            this.TxtMarka.TabIndex = 3;
+            this.TxtSoyad.Location = new System.Drawing.Point(88, 128);
+            this.TxtSoyad.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Size = new System.Drawing.Size(147, 20);
+            this.TxtSoyad.TabIndex = 3;
             // 
             // labelControl1
             // 
@@ -362,13 +382,13 @@ namespace TeknikServis.Formlar
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "AD:\r\n";
             // 
-            // TxtUrunAd
+            // TxtCariAd
             // 
-            this.TxtUrunAd.Location = new System.Drawing.Point(88, 104);
-            this.TxtUrunAd.Margin = new System.Windows.Forms.Padding(6);
-            this.TxtUrunAd.Name = "TxtUrunAd";
-            this.TxtUrunAd.Size = new System.Drawing.Size(147, 20);
-            this.TxtUrunAd.TabIndex = 2;
+            this.TxtCariAd.Location = new System.Drawing.Point(88, 104);
+            this.TxtCariAd.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtCariAd.Name = "TxtCariAd";
+            this.TxtCariAd.Size = new System.Drawing.Size(147, 20);
+            this.TxtCariAd.TabIndex = 2;
             // 
             // gridControl1
             // 
@@ -391,11 +411,12 @@ namespace TeknikServis.Formlar
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel1.Controls.Add(this.toplam_urun);
+            this.panel1.Controls.Add(this.toplam_musteri);
             this.panel1.Controls.Add(this.labelControl12);
             this.panel1.Location = new System.Drawing.Point(256, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -403,18 +424,18 @@ namespace TeknikServis.Formlar
             this.panel1.Size = new System.Drawing.Size(166, 119);
             this.panel1.TabIndex = 6;
             // 
-            // toplam_urun
+            // toplam_musteri
             // 
-            this.toplam_urun.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.toplam_urun.Appearance.ForeColor = System.Drawing.Color.White;
-            this.toplam_urun.Appearance.Options.UseFont = true;
-            this.toplam_urun.Appearance.Options.UseForeColor = true;
-            this.toplam_urun.Location = new System.Drawing.Point(56, 46);
-            this.toplam_urun.Margin = new System.Windows.Forms.Padding(2);
-            this.toplam_urun.Name = "toplam_urun";
-            this.toplam_urun.Size = new System.Drawing.Size(20, 46);
-            this.toplam_urun.TabIndex = 1;
-            this.toplam_urun.Text = "1";
+            this.toplam_musteri.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplam_musteri.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toplam_musteri.Appearance.Options.UseFont = true;
+            this.toplam_musteri.Appearance.Options.UseForeColor = true;
+            this.toplam_musteri.Location = new System.Drawing.Point(67, 46);
+            this.toplam_musteri.Margin = new System.Windows.Forms.Padding(2);
+            this.toplam_musteri.Name = "toplam_musteri";
+            this.toplam_musteri.Size = new System.Drawing.Size(20, 46);
+            this.toplam_musteri.TabIndex = 1;
+            this.toplam_musteri.Text = "1";
             // 
             // labelControl12
             // 
@@ -422,36 +443,36 @@ namespace TeknikServis.Formlar
             this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Appearance.Options.UseForeColor = true;
-            this.labelControl12.Location = new System.Drawing.Point(31, 13);
+            this.labelControl12.Location = new System.Drawing.Point(17, 13);
             this.labelControl12.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(110, 19);
+            this.labelControl12.Size = new System.Drawing.Size(133, 19);
             this.labelControl12.TabIndex = 0;
-            this.labelControl12.Text = "Toplam Cari Sayısı";
+            this.labelControl12.Text = "Toplam Müşteri Sayısı";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel2.Controls.Add(this.labelControl13);
+            this.panel2.Controls.Add(this.toplam_ılce);
             this.panel2.Controls.Add(this.labelControl14);
-            this.panel2.Location = new System.Drawing.Point(453, 10);
+            this.panel2.Location = new System.Drawing.Point(652, 11);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(166, 119);
             this.panel2.TabIndex = 7;
             // 
-            // labelControl13
+            // toplam_ılce
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Appearance.Options.UseForeColor = true;
-            this.labelControl13.Location = new System.Drawing.Point(52, 46);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(20, 46);
-            this.labelControl13.TabIndex = 1;
-            this.labelControl13.Text = "1";
+            this.toplam_ılce.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplam_ılce.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toplam_ılce.Appearance.Options.UseFont = true;
+            this.toplam_ılce.Appearance.Options.UseForeColor = true;
+            this.toplam_ılce.Location = new System.Drawing.Point(70, 46);
+            this.toplam_ılce.Margin = new System.Windows.Forms.Padding(2);
+            this.toplam_ılce.Name = "toplam_ılce";
+            this.toplam_ılce.Size = new System.Drawing.Size(20, 46);
+            this.toplam_ılce.TabIndex = 1;
+            this.toplam_ılce.Text = "1";
             // 
             // labelControl14
             // 
@@ -459,36 +480,36 @@ namespace TeknikServis.Formlar
             this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl14.Appearance.Options.UseFont = true;
             this.labelControl14.Appearance.Options.UseForeColor = true;
-            this.labelControl14.Location = new System.Drawing.Point(38, 13);
+            this.labelControl14.Location = new System.Drawing.Point(25, 13);
             this.labelControl14.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(93, 19);
+            this.labelControl14.Size = new System.Drawing.Size(106, 19);
             this.labelControl14.TabIndex = 0;
-            this.labelControl14.Text = "Aktif Cari Sayısı";
+            this.labelControl14.Text = "Toplam İlçe Sayısı";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel3.Controls.Add(this.labelControl15);
+            this.panel3.Controls.Add(this.toplam_il);
             this.panel3.Controls.Add(this.labelControl16);
-            this.panel3.Location = new System.Drawing.Point(653, 10);
+            this.panel3.Location = new System.Drawing.Point(454, 11);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(166, 119);
             this.panel3.TabIndex = 8;
             // 
-            // labelControl15
+            // toplam_il
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl15.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Location = new System.Drawing.Point(45, 46);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(20, 46);
-            this.labelControl15.TabIndex = 1;
-            this.labelControl15.Text = "1";
+            this.toplam_il.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.toplam_il.Appearance.ForeColor = System.Drawing.Color.White;
+            this.toplam_il.Appearance.Options.UseFont = true;
+            this.toplam_il.Appearance.Options.UseForeColor = true;
+            this.toplam_il.Location = new System.Drawing.Point(67, 46);
+            this.toplam_il.Margin = new System.Windows.Forms.Padding(2);
+            this.toplam_il.Name = "toplam_il";
+            this.toplam_il.Size = new System.Drawing.Size(20, 46);
+            this.toplam_il.TabIndex = 1;
+            this.toplam_il.Text = "1";
             // 
             // labelControl16
             // 
@@ -506,7 +527,7 @@ namespace TeknikServis.Formlar
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel4.Controls.Add(this.labelControl17);
+            this.panel4.Controls.Add(this.enfazla_musteri_il);
             this.panel4.Controls.Add(this.labelControl18);
             this.panel4.Location = new System.Drawing.Point(855, 10);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
@@ -514,18 +535,18 @@ namespace TeknikServis.Formlar
             this.panel4.Size = new System.Drawing.Size(166, 119);
             this.panel4.TabIndex = 9;
             // 
-            // labelControl17
+            // enfazla_musteri_il
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl17.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Appearance.Options.UseForeColor = true;
-            this.labelControl17.Location = new System.Drawing.Point(55, 46);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(20, 46);
-            this.labelControl17.TabIndex = 1;
-            this.labelControl17.Text = "1";
+            this.enfazla_musteri_il.Appearance.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.enfazla_musteri_il.Appearance.ForeColor = System.Drawing.Color.White;
+            this.enfazla_musteri_il.Appearance.Options.UseFont = true;
+            this.enfazla_musteri_il.Appearance.Options.UseForeColor = true;
+            this.enfazla_musteri_il.Location = new System.Drawing.Point(16, 46);
+            this.enfazla_musteri_il.Margin = new System.Windows.Forms.Padding(2);
+            this.enfazla_musteri_il.Name = "enfazla_musteri_il";
+            this.enfazla_musteri_il.Size = new System.Drawing.Size(131, 46);
+            this.enfazla_musteri_il.TabIndex = 1;
+            this.enfazla_musteri_il.Text = "Trabzon";
             // 
             // labelControl18
             // 
@@ -533,12 +554,12 @@ namespace TeknikServis.Formlar
             this.labelControl18.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl18.Appearance.Options.UseFont = true;
             this.labelControl18.Appearance.Options.UseForeColor = true;
-            this.labelControl18.Location = new System.Drawing.Point(34, 13);
+            this.labelControl18.Location = new System.Drawing.Point(43, 13);
             this.labelControl18.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(94, 19);
+            this.labelControl18.Size = new System.Drawing.Size(79, 19);
             this.labelControl18.TabIndex = 0;
-            this.labelControl18.Text = "En Fazla Carili İl";
+            this.labelControl18.Text = "Merkez Şube";
             // 
             // FrmCariListesi
             // 
@@ -554,22 +575,22 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmCariListesi";
-            this.Text = "FrmCariListesi";
+            this.Text = "Müşteri Listesi";
             this.Load += new System.EventHandler(this.FrmCariListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBanka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpİl.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtStatü.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiNo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVergiDairesi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAlisFiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMarka.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpİlçe.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCariAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -594,38 +615,39 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpİlçe;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit TxtAlisFiyat;
+        private DevExpress.XtraEditors.TextEdit TxtTelefon;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit TxtMarka;
+        private DevExpress.XtraEditors.TextEdit TxtSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit TxtUrunAd;
+        private DevExpress.XtraEditors.TextEdit TxtCariAd;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.TextEdit txtBanka;
+        private DevExpress.XtraEditors.LookUpEdit lookUpİl;
         private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit txtStatü;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtVergiNo;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtAdress;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtVergiDairesi;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.LabelControl toplam_urun;
+        private DevExpress.XtraEditors.LabelControl toplam_musteri;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl toplam_ılce;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl toplam_il;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private System.Windows.Forms.Panel panel4;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.LabelControl enfazla_musteri_il;
         private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
     }
 }

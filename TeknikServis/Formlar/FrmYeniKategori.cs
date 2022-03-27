@@ -38,5 +38,11 @@ namespace TeknikServis.Formlar
             FrmYeniKategori fr = new FrmYeniKategori();
             this.Hide();
         }
+
+        private void txtKategoriAd_Click(object sender, EventArgs e)
+        {
+            txtKategoriAd.Text = "";
+            txtKategoriAd.Focus();
+        }
     }
 }

@@ -239,7 +239,7 @@ namespace TeknikServis.Formlar
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.pictureEdit1);
-            this.groupControl2.Location = new System.Drawing.Point(273, 289);
+            this.groupControl2.Location = new System.Drawing.Point(271, 317);
             this.groupControl2.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(200, 132);
@@ -261,7 +261,7 @@ namespace TeknikServis.Formlar
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.pictureEdit2);
-            this.groupControl3.Location = new System.Drawing.Point(479, 289);
+            this.groupControl3.Location = new System.Drawing.Point(477, 317);
             this.groupControl3.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(200, 132);
@@ -283,7 +283,7 @@ namespace TeknikServis.Formlar
             // groupControl4
             // 
             this.groupControl4.Controls.Add(this.pictureEdit3);
-            this.groupControl4.Location = new System.Drawing.Point(685, 289);
+            this.groupControl4.Location = new System.Drawing.Point(683, 317);
             this.groupControl4.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.Size = new System.Drawing.Size(200, 132);
@@ -305,10 +305,10 @@ namespace TeknikServis.Formlar
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.pictureEdit4);
-            this.groupControl5.Location = new System.Drawing.Point(891, 291);
+            this.groupControl5.Location = new System.Drawing.Point(889, 317);
             this.groupControl5.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl5.Name = "groupControl5";
-            this.groupControl5.Size = new System.Drawing.Size(200, 130);
+            this.groupControl5.Size = new System.Drawing.Size(200, 132);
             this.groupControl5.TabIndex = 7;
             this.groupControl5.Text = "ASUS";
             // 
@@ -321,13 +321,13 @@ namespace TeknikServis.Formlar
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit4.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit4.Size = new System.Drawing.Size(196, 105);
+            this.pictureEdit4.Size = new System.Drawing.Size(196, 107);
             this.pictureEdit4.TabIndex = 1;
             // 
             // groupControl6
             // 
             this.groupControl6.Controls.Add(this.pictureEdit7);
-            this.groupControl6.Location = new System.Drawing.Point(271, 435);
+            this.groupControl6.Location = new System.Drawing.Point(271, 511);
             this.groupControl6.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.Size = new System.Drawing.Size(200, 130);
@@ -351,10 +351,10 @@ namespace TeknikServis.Formlar
             this.groupControl7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.groupControl7.Appearance.Options.UseBackColor = true;
             this.groupControl7.Controls.Add(this.pictureEdit8);
-            this.groupControl7.Location = new System.Drawing.Point(1097, 291);
+            this.groupControl7.Location = new System.Drawing.Point(1096, 317);
             this.groupControl7.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(200, 130);
+            this.groupControl7.Size = new System.Drawing.Size(200, 132);
             this.groupControl7.TabIndex = 10;
             this.groupControl7.Text = "APPLE";
             // 
@@ -367,13 +367,13 @@ namespace TeknikServis.Formlar
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit8.Size = new System.Drawing.Size(196, 105);
+            this.pictureEdit8.Size = new System.Drawing.Size(196, 107);
             this.pictureEdit8.TabIndex = 1;
             // 
             // groupControl8
             // 
             this.groupControl8.Controls.Add(this.pictureEdit6);
-            this.groupControl8.Location = new System.Drawing.Point(477, 435);
+            this.groupControl8.Location = new System.Drawing.Point(477, 511);
             this.groupControl8.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl8.Name = "groupControl8";
             this.groupControl8.Size = new System.Drawing.Size(200, 130);
@@ -395,7 +395,7 @@ namespace TeknikServis.Formlar
             // groupControl9
             // 
             this.groupControl9.Controls.Add(this.pictureEdit5);
-            this.groupControl9.Location = new System.Drawing.Point(683, 435);
+            this.groupControl9.Location = new System.Drawing.Point(683, 511);
             this.groupControl9.Margin = new System.Windows.Forms.Padding(8);
             this.groupControl9.Name = "groupControl9";
             this.groupControl9.Size = new System.Drawing.Size(200, 130);
@@ -417,7 +417,7 @@ namespace TeknikServis.Formlar
             // groupControl10
             // 
             this.groupControl10.Controls.Add(this.pictureEdit9);
-            this.groupControl10.Location = new System.Drawing.Point(889, 436);
+            this.groupControl10.Location = new System.Drawing.Point(889, 512);
             this.groupControl10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupControl10.Name = "groupControl10";
             this.groupControl10.Size = new System.Drawing.Size(200, 130);
@@ -438,7 +438,7 @@ namespace TeknikServis.Formlar
             // groupControl11
             // 
             this.groupControl11.Controls.Add(this.pictureEdit10);
-            this.groupControl11.Location = new System.Drawing.Point(1097, 435);
+            this.groupControl11.Location = new System.Drawing.Point(1097, 511);
             this.groupControl11.Margin = new System.Windows.Forms.Padding(6);
             this.groupControl11.Name = "groupControl11";
             this.groupControl11.Size = new System.Drawing.Size(200, 130);

@@ -28,7 +28,7 @@ namespace TeknikServis.Formlar
                                u.TARIH,
                                u.SAAT,
                                u.VERGIDAIRE,
-                               CARİ = u.TBLCARI.AD + " " + u.TBLCARI.SOYAD,
+                               MÜŞTERİ = u.TBLCARI.AD + " " + u.TBLCARI.SOYAD,
                                PERSONEL = u.TBLPERSONEL.AD + " " + u.TBLPERSONEL.SOYAD
                            };
             gridControl1.DataSource = degerler.ToList();
@@ -58,18 +58,27 @@ namespace TeknikServis.Formlar
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLFATURABILGI t = new TBLFATURABILGI();
-            t.SERI = txtSeri.Text;
-            t.SIRANO = txtSıraNo.Text;
-            t.TARIH = DateTime.Parse(txtTarih.Text);
-            t.SAAT = txtSaat.Text;
-            t.VERGIDAIRE = txtVergiDairesi.Text;
-            t.CARI = int.Parse(lookUpEdit1.EditValue.ToString());
-            t.PERSONEL = short.Parse(lookUpEdit2.EditValue.ToString());
-            MessageBox.Show("Fatura Sisteme Kayıt Edilmiştir", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            db.TBLFATURABILGI.Add(t);
-            db.SaveChanges();
-            Listele();
+            if (lookUpEdit1.Text==""||lookUpEdit1.Text=="Müşteri Seç"||lookUpEdit2.Text==""||lookUpEdit2.Text=="Personel Seç"||txtSeri.Text=="")
+            {
+                MessageBox.Show("Fatura Sisteme Kayıt Edilemedi", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLFATURABILGI t = new TBLFATURABILGI();
+                t.SERI = txtSeri.Text;
+                t.SIRANO = txtSıraNo.Text;
+                t.TARIH = DateTime.Parse(txtTarih.Text);
+                t.SAAT = txtSaat.Text;
+                t.VERGIDAIRE = txtVergiDairesi.Text;
+                t.CARI = int.Parse(lookUpEdit1.EditValue.ToString());
+                t.PERSONEL = short.Parse(lookUpEdit2.EditValue.ToString());
+                db.TBLFATURABILGI.Add(t);
+                db.SaveChanges();
+                Listele();
+                MessageBox.Show("Fatura Sisteme Kayıt Edilmiştir", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+            }
+           
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -80,7 +89,8 @@ namespace TeknikServis.Formlar
             txtTarih.Text = gridView1.GetFocusedRowCellValue("TARIH").ToString();
             txtSaat.Text = gridView1.GetFocusedRowCellValue("SAAT").ToString();
             txtVergiDairesi.Text = gridView1.GetFocusedRowCellValue("VERGIDAIRE").ToString();
-
+            lookUpEdit1.Text = gridView1.GetFocusedRowCellValue("MÜŞTERİ").ToString();
+            lookUpEdit2.Text = gridView1.GetFocusedRowCellValue("PERSONEL").ToString();
         }
 
         private void btnSil_Click(object sender, EventArgs e)
@@ -105,6 +115,23 @@ namespace TeknikServis.Formlar
             db.SaveChanges();
             MessageBox.Show("Fatura Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtSeri.Text = "";
+            txtSıraNo.Text = "";
+            txtTarih.Text = "";
+            txtSaat.Text = "";
+            txtVergiDairesi.Text = "";
+        }
+        
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaKalemPopUp fr = new FrmFaturaKalemPopUp();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("ID").ToString());
+            fr.Show();
         }
     }
 }

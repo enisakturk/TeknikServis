@@ -232,7 +232,6 @@ namespace TeknikServis.Formlar
             // 
             // lookUpEdit2
             // 
-            this.lookUpEdit2.EditValue = "";
             this.lookUpEdit2.Location = new System.Drawing.Point(61, 137);
             this.lookUpEdit2.Margin = new System.Windows.Forms.Padding(4);
             this.lookUpEdit2.Name = "lookUpEdit2";
@@ -246,6 +245,7 @@ namespace TeknikServis.Formlar
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit2.Properties.DisplayMember = "AD";
+            this.lookUpEdit2.Properties.NullText = "Personel Seç";
             this.lookUpEdit2.Properties.ValueMember = "ID";
             this.lookUpEdit2.Size = new System.Drawing.Size(191, 26);
             this.lookUpEdit2.TabIndex = 2;
@@ -262,7 +262,6 @@ namespace TeknikServis.Formlar
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.EditValue = "";
             this.lookUpEdit1.Location = new System.Drawing.Point(61, 78);
             this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.lookUpEdit1.Name = "lookUpEdit1";
@@ -276,6 +275,7 @@ namespace TeknikServis.Formlar
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "Müşteri Seç";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(191, 26);
             this.lookUpEdit1.TabIndex = 1;

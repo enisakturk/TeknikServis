@@ -17,12 +17,36 @@ namespace TeknikServis.Formlar
             InitializeComponent();
         }
         DbTeknikServisEntities db = new DbTeknikServisEntities();
+        private void FrmUrunSatıs_Load(object sender, EventArgs e)
+        {
+            urun_id.Properties.DataSource = (from u in db.TBLURUN
+                                              select new
+                                              {
+                                                  u.ID,
+                                                  u.AD
+                                              }).ToList();
+
+            musteri_id.Properties.DataSource = (from u in db.TBLCARI
+                                             select new
+                                             {
+                                                 u.ID,
+                                                AD= u.AD + " "+ u.SOYAD
+                                             }).ToList();
+
+            personel_id.Properties.DataSource = (from u in db.TBLPERSONEL
+                                             select new
+                                             {
+                                                 u.ID,
+                                                AD= u.AD + " "+ u.SOYAD
+                                             }).ToList();
+            txtTarih.Text = DateTime.Now.ToShortDateString();
+        }
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             TBLURUNHAREKET t = new TBLURUNHAREKET();
-            t.URUN = int.Parse(txtId.Text);
-            t.MUSTERI = int.Parse(txtMüşteri.Text);
-            t.PERSONEL = short.Parse(txtPersonel.Text);
+            t.URUN = int.Parse(urun_id.EditValue.ToString());
+            t.MUSTERI = int.Parse(musteri_id.EditValue.ToString());
+            t.PERSONEL = short.Parse(personel_id.EditValue.ToString());
             t.TARIH = DateTime.Parse(txtTarih.Text);
             t.ADET = short.Parse(txtAdet.Text);
             t.FIYAT = decimal.Parse(txtFiyat.Text);
@@ -38,6 +62,22 @@ namespace TeknikServis.Formlar
             this.Hide();
         }
 
-       
+        private void txtAdet_Click(object sender, EventArgs e)
+        {
+            txtAdet.Text = "";
+            txtAdet.Focus();
+        }
+
+        private void txtFiyat_Click(object sender, EventArgs e)
+        {
+            txtFiyat.Text = "";
+            txtFiyat.Focus();
+        }
+
+        private void txtSeriNo_Click(object sender, EventArgs e)
+        {
+            txtSeriNo.Text = "";
+            txtSeriNo.Focus();
+        }
     }
 }

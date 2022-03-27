@@ -33,6 +33,7 @@ namespace TeknikServis.Formlar
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.btnGuncel = new DevExpress.XtraEditors.SimpleButton();
@@ -89,6 +90,7 @@ namespace TeknikServis.Formlar
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // groupControl1
             // 
@@ -98,6 +100,7 @@ namespace TeknikServis.Formlar
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
             this.groupControl1.Appearance.Options.UseForeColor = true;
+            this.groupControl1.Controls.Add(this.btnTemizle);
             this.groupControl1.Controls.Add(this.txtId);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.btnGuncel);
@@ -124,6 +127,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Size = new System.Drawing.Size(321, 697);
             this.groupControl1.TabIndex = 13;
             this.groupControl1.Text = "FATURA İŞLEMLERİ";
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(133, 561);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(146, 30);
+            this.btnTemizle.TabIndex = 20;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // txtId
             // 
@@ -177,6 +191,7 @@ namespace TeknikServis.Formlar
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit2.Properties.DisplayMember = "AD";
+            this.lookUpEdit2.Properties.NullText = "Personel Seç";
             this.lookUpEdit2.Properties.ValueMember = "ID";
             this.lookUpEdit2.Size = new System.Drawing.Size(146, 20);
             this.lookUpEdit2.TabIndex = 7;
@@ -185,12 +200,12 @@ namespace TeknikServis.Formlar
             // 
             this.labelControl6.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl6.Appearance.Options.UseForeColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(93, 356);
+            this.labelControl6.Location = new System.Drawing.Point(83, 356);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(32, 13);
+            this.labelControl6.Size = new System.Drawing.Size(42, 13);
             this.labelControl6.TabIndex = 15;
-            this.labelControl6.Text = "CARİ :";
+            this.labelControl6.Text = "Müşteri :";
             // 
             // lookUpEdit1
             // 
@@ -200,6 +215,7 @@ namespace TeknikServis.Formlar
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit1.Properties.DisplayMember = "AD";
+            this.lookUpEdit1.Properties.NullText = "Müşteri Seç";
             this.lookUpEdit1.Properties.ValueMember = "ID";
             this.lookUpEdit1.Size = new System.Drawing.Size(146, 20);
             this.lookUpEdit1.TabIndex = 6;
@@ -348,7 +364,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.gridControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmFaturaListesi";
-            this.Text = "FrmFaturaListesi";
+            this.Text = "Fatura Listesi";
             this.Load += new System.EventHandler(this.FrmFaturaListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -392,5 +408,6 @@ namespace TeknikServis.Formlar
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
     }
 }

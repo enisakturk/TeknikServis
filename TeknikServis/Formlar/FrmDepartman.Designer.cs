@@ -295,7 +295,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmDepartman";
-            this.Text = "FrmDepartman";
+            this.Text = "Departmanlar";
             this.Load += new System.EventHandler(this.FrmDepartman_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

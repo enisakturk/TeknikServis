@@ -33,8 +33,10 @@ namespace TeknikServis.Formlar
                            };
             gridControl1.DataSource = degerler.ToList();
 
+            // bilgi panellerindeki ürünlerin tamir edilip edilmediğini sayan kısım
             arızalı_urun_sayısı.Text = db.TBLURUNKABUL.Count(x=>x.URUNDURUM==true).ToString();
             arızası_bitmis_sayısı.Text = db.TBLURUNKABUL.Count(x=>x.URUNDURUM==false).ToString();
+
             toplam_urun_sayısı.Text = db.TBLURUN.Count().ToString();
 
             parça_bekleyen_urun.Text = db.TBLURUNKABUL.Count(x => x.URUNDURUMDETAY == "Parça Bekliyor").ToString();
@@ -44,6 +46,7 @@ namespace TeknikServis.Formlar
 
             SqlConnection baglantı = new SqlConnection("Data Source=DESKTOP-CQJ8G3J\\SQLEXPRESS;Initial Catalog=DbTeknikServis;Integrated Security=True");
 
+            // charttaki ürünlerin durumunu çeken sorgu
             baglantı.Open();
             SqlCommand sorgu = new SqlCommand("SELECT URUNDURUMDETAY,COUNT(*) FROM TBLURUNKABUL GROUP BY URUNDURUMDETAY", baglantı);
             SqlDataReader oku = sorgu.ExecuteReader();
@@ -53,7 +56,7 @@ namespace TeknikServis.Formlar
             }
             baglantı.Close();
         }
-
+        // grid in içinden ürün açıklaması yapmak için yazıldı
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
             FrmArızalıUrunAcıklama fr = new FrmArızalıUrunAcıklama();

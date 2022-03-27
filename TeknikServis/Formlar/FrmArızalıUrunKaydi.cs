@@ -39,7 +39,7 @@ namespace TeknikServis.Formlar
         }
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            if (lookUpEdit1.Text==""||lookUpEdit2.Text==""||txtSeriNo.Text=="")
+            if (lookUpEdit1.Text==""|| lookUpEdit1.Text== "Müşteri Seç" ||lookUpEdit2.Text==""|| lookUpEdit2.Text== "Personel Seç"|| txtSeriNo.Text=="")
             {
                 MessageBox.Show("İlgili Alanları Eksizksiz Doldurun", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
