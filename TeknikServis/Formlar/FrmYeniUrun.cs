@@ -19,22 +19,30 @@ namespace TeknikServis.Formlar
         DbTeknikServisEntities db = new DbTeknikServisEntities();
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            TBLURUN t = new TBLURUN();
-            t.AD = txtUrunAd.Text;
-            t.ALISFIYAT = decimal.Parse(txtAlısFiyat.Text);
-            t.SATISFIYAT = decimal.Parse(txtSatısFiyat.Text);
-            t.STOK = short.Parse(txtStok.Text);
-            t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
-            t.MARKA = txtMarka.Text;
-            db.TBLURUN.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Ürünler Kayıt Edildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (lookUpEdit1.Text==""||txtUrunAd.Text==""||txtMarka.Text=="")
+            {
+                MessageBox.Show("İlgili Alanları Eksizksiz Doldurun", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLURUN t = new TBLURUN();
+                t.AD = txtUrunAd.Text;
+                t.ALISFIYAT = decimal.Parse(txtAlısFiyat.Text);
+                t.SATISFIYAT = decimal.Parse(txtSatısFiyat.Text);
+                t.STOK = short.Parse(txtStok.Text);
+                t.KATEGORI = byte.Parse(lookUpEdit1.EditValue.ToString());
+                t.MARKA = txtMarka.Text;
+                db.TBLURUN.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Ürünler Kayıt Edildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
 
         }
 
         private void kapat_Click(object sender, EventArgs e)
         {
-            FrmYeniUrun fr = new FrmYeniUrun();  //bakılacak çalışmıyor
+            FrmYeniUrun fr = new FrmYeniUrun();
             this.Hide();
             
         }

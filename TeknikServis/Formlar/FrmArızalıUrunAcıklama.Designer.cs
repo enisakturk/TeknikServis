@@ -32,25 +32,28 @@ namespace TeknikServis.Formlar
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArızalıUrunAcıklama));
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.txtSeriNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtAcıklama = new System.Windows.Forms.RichTextBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
             this.kapat = new DevExpress.XtraEditors.PictureEdit();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtSeriNo = new DevExpress.XtraEditors.TextEdit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbDurum = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnGuncelle.Location = new System.Drawing.Point(166, 377);
+            this.btnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGuncelle.ImageOptions.Image")));
+            this.btnGuncelle.Location = new System.Drawing.Point(124, 366);
+            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(138, 44);
-            this.btnGuncelle.TabIndex = 4;
+            this.btnGuncelle.Size = new System.Drawing.Size(104, 36);
+            this.btnGuncelle.TabIndex = 5;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
@@ -60,108 +63,166 @@ namespace TeknikServis.Formlar
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(77, 13);
+            this.labelControl1.Location = new System.Drawing.Point(58, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(265, 28);
+            this.labelControl1.Size = new System.Drawing.Size(213, 21);
             this.labelControl1.TabIndex = 17;
             this.labelControl1.Text = "Arızalı Ürün Kaydı Açıklama";
             // 
-            // richTextBox1
+            // txtAcıklama
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(96, 260);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(290, 96);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            // 
-            // txtSeriNo
-            // 
-            this.txtSeriNo.Location = new System.Drawing.Point(96, 108);
-            this.txtSeriNo.Name = "txtSeriNo";
-            this.txtSeriNo.Properties.Mask.EditMask = "AAAAA";
-            this.txtSeriNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
-            this.txtSeriNo.Size = new System.Drawing.Size(194, 22);
-            this.txtSeriNo.TabIndex = 1;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(96, 74);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(65, 28);
-            this.labelControl2.TabIndex = 10;
-            this.labelControl2.Text = "Seri No";
+            this.txtAcıklama.BackColor = System.Drawing.Color.DimGray;
+            this.txtAcıklama.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAcıklama.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAcıklama.ForeColor = System.Drawing.Color.White;
+            this.txtAcıklama.Location = new System.Drawing.Point(72, 260);
+            this.txtAcıklama.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAcıklama.Name = "txtAcıklama";
+            this.txtAcıklama.Size = new System.Drawing.Size(218, 79);
+            this.txtAcıklama.TabIndex = 4;
+            this.txtAcıklama.Text = "Açıklamayı Girin";
+            this.txtAcıklama.Click += new System.EventHandler(this.txtAcıklama_Click);
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(96, 215);
+            this.labelControl3.Location = new System.Drawing.Point(72, 235);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(127, 28);
+            this.labelControl3.Size = new System.Drawing.Size(101, 21);
             this.labelControl3.TabIndex = 13;
             this.labelControl3.Text = "Arıza Detayları";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(96, 143);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(43, 28);
-            this.labelControl4.TabIndex = 11;
-            this.labelControl4.Text = "Tarih";
-            // 
-            // txtTarih
-            // 
-            this.txtTarih.Location = new System.Drawing.Point(96, 177);
-            this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Size = new System.Drawing.Size(194, 22);
-            this.txtTarih.TabIndex = 2;
             // 
             // kapat
             // 
             this.kapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapat.EditValue = ((object)(resources.GetObject("kapat.EditValue")));
-            this.kapat.Location = new System.Drawing.Point(420, 13);
+            this.kapat.Location = new System.Drawing.Point(315, 11);
+            this.kapat.Margin = new System.Windows.Forms.Padding(2);
             this.kapat.Name = "kapat";
             this.kapat.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.kapat.Properties.Appearance.Options.UseBackColor = true;
             this.kapat.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.kapat.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.kapat.Size = new System.Drawing.Size(27, 28);
+            this.kapat.Size = new System.Drawing.Size(20, 23);
             this.kapat.TabIndex = 67;
             this.kapat.Click += new System.EventHandler(this.kapat_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Location = new System.Drawing.Point(72, 94);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(193, 3);
+            this.panel4.TabIndex = 137;
+            // 
+            // txtSeriNo
+            // 
+            this.txtSeriNo.EditValue = "Seri No";
+            this.txtSeriNo.Location = new System.Drawing.Point(72, 64);
+            this.txtSeriNo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSeriNo.Name = "txtSeriNo";
+            this.txtSeriNo.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
+            this.txtSeriNo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeriNo.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtSeriNo.Properties.Appearance.Options.UseBackColor = true;
+            this.txtSeriNo.Properties.Appearance.Options.UseFont = true;
+            this.txtSeriNo.Properties.Appearance.Options.UseForeColor = true;
+            this.txtSeriNo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSeriNo.Properties.Mask.EditMask = "AAAAA";
+            this.txtSeriNo.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
+            this.txtSeriNo.Size = new System.Drawing.Size(146, 26);
+            this.txtSeriNo.TabIndex = 1;
+            this.txtSeriNo.Click += new System.EventHandler(this.txtSeriNo_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(72, 153);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(193, 3);
+            this.panel1.TabIndex = 139;
+            // 
+            // txtTarih
+            // 
+            this.txtTarih.EditValue = "Tarih";
+            this.txtTarih.Location = new System.Drawing.Point(72, 123);
+            this.txtTarih.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTarih.Name = "txtTarih";
+            this.txtTarih.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
+            this.txtTarih.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTarih.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.txtTarih.Properties.Appearance.Options.UseBackColor = true;
+            this.txtTarih.Properties.Appearance.Options.UseFont = true;
+            this.txtTarih.Properties.Appearance.Options.UseForeColor = true;
+            this.txtTarih.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtTarih.Properties.Mask.EditMask = "d";
+            this.txtTarih.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
+            this.txtTarih.Size = new System.Drawing.Size(146, 26);
+            this.txtTarih.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(73, 211);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 3);
+            this.panel2.TabIndex = 141;
+            // 
+            // cmbDurum
+            // 
+            this.cmbDurum.BackColor = System.Drawing.Color.DimGray;
+            this.cmbDurum.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbDurum.ForeColor = System.Drawing.Color.White;
+            this.cmbDurum.FormattingEnabled = true;
+            this.cmbDurum.Items.AddRange(new object[] {
+            "Ürün Kaydoldu",
+            "Mesaj Bekliyor",
+            "Parça Bekliyor",
+            "Fiyat Verildi",
+            "İptal Edildi"});
+            this.cmbDurum.Location = new System.Drawing.Point(73, 185);
+            this.cmbDurum.Name = "cmbDurum";
+            this.cmbDurum.Size = new System.Drawing.Size(192, 23);
+            this.cmbDurum.TabIndex = 3;
+            this.cmbDurum.Text = "Durum Seçin";
+            // 
             // FrmArızalıUrunAcıklama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(459, 450);
-            this.Controls.Add(this.kapat);
+            this.ClientSize = new System.Drawing.Size(344, 421);
+            this.Controls.Add(this.cmbDurum);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtTarih);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtSeriNo);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.kapat);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.txtAcıklama);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnGuncelle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmArızalıUrunAcıklama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmArızalıUrunAcıklama";
+            this.Load += new System.EventHandler(this.FrmArızalıUrunAcıklama_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSeriNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kapat.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,12 +232,14 @@ namespace TeknikServis.Formlar
 
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private DevExpress.XtraEditors.TextEdit txtSeriNo;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.RichTextBox txtAcıklama;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit txtTarih;
         private DevExpress.XtraEditors.PictureEdit kapat;
+        private System.Windows.Forms.Panel panel4;
+        private DevExpress.XtraEditors.TextEdit txtSeriNo;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.TextEdit txtTarih;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox cmbDurum;
     }
 }

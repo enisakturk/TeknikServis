@@ -17,6 +17,7 @@ namespace TeknikServis.Formlar
             InitializeComponent();
         }
         DbTeknikServisEntities db = new DbTeknikServisEntities();
+
         private void kapat_Click(object sender, EventArgs e)
         {
             FrmArızalıUrunAcıklama fr = new FrmArızalıUrunAcıklama();
@@ -25,13 +26,48 @@ namespace TeknikServis.Formlar
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            TBLURUNTAKIP t = new TBLURUNTAKIP();
-            t.ACIKLAMA = richTextBox1.Text;
-            t.SERINO = txtSeriNo.Text;
-            t.TARIH = DateTime.Parse(txtTarih.Text);
-            db.TBLURUNTAKIP.Add(t);
-            db.SaveChanges();
-            MessageBox.Show("Ürün Arıza Detayları Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtSeriNo.Text == "" || cmbDurum.Text == "" || txtAcıklama.Text == "")
+            {
+                MessageBox.Show("İlgili Alanları Eksizksiz Doldurun", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                TBLURUNTAKIP t = new TBLURUNTAKIP();
+                t.ACIKLAMA = txtAcıklama.Text;
+                t.SERINO = txtSeriNo.Text;
+                t.TARIH = DateTime.Parse(txtTarih.Text);
+                db.TBLURUNTAKIP.Add(t);
+
+
+                TBLURUNKABUL x = new TBLURUNKABUL();
+                int urunid = int.Parse(id.ToString());
+                var deger = db.TBLURUNKABUL.Find(urunid);
+                deger.URUNDURUMDETAY = cmbDurum.Text;
+
+                db.SaveChanges();
+
+                MessageBox.Show("Ürün Arıza Detayları Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void txtSeriNo_Click(object sender, EventArgs e)
+        {
+            txtSeriNo.Text = "";
+            txtSeriNo.Focus();
+        }
+
+        public string id, serino;
+        private void FrmArızalıUrunAcıklama_Load(object sender, EventArgs e)
+        {
+            txtTarih.Text = DateTime.Now.ToShortDateString();
+            txtSeriNo.Text = serino;
+        }
+
+        private void txtAcıklama_Click(object sender, EventArgs e)
+        {
+            txtAcıklama.Text = "";
+            txtAcıklama.Focus();
         }
     }
 }

@@ -38,7 +38,7 @@ namespace TeknikServis
             this.BtnYeniUrun = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.Btnİstatistik = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMarka = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMarkaİstatistik = new DevExpress.XtraBars.BarButtonItem();
             this.btnArızalıÜrünListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnYeniArızalıUrunKaydi = new DevExpress.XtraBars.BarButtonItem();
             this.btnArızalıUrunAcıklama = new DevExpress.XtraBars.BarButtonItem();
@@ -80,6 +80,7 @@ namespace TeknikServis
             this.btnArızalıUrunDetay = new DevExpress.XtraBars.BarButtonItem();
             this.btnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
             this.btnHakkımızda = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAnaSayfa = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -106,7 +107,6 @@ namespace TeknikServis
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnAnaSayfa = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +125,7 @@ namespace TeknikServis
             this.BtnYeniUrun,
             this.barButtonItem5,
             this.Btnİstatistik,
-            this.btnMarka,
+            this.btnMarkaİstatistik,
             this.btnArızalıÜrünListesi,
             this.btnYeniArızalıUrunKaydi,
             this.btnArızalıUrunAcıklama,
@@ -237,14 +237,14 @@ namespace TeknikServis
             this.Btnİstatistik.Name = "Btnİstatistik";
             this.Btnİstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btnİstatistik_ItemClick);
             // 
-            // btnMarka
+            // btnMarkaİstatistik
             // 
-            this.btnMarka.Caption = "Marka İstatistikleri";
-            this.btnMarka.Id = 7;
-            this.btnMarka.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMarka.ImageOptions.Image")));
-            this.btnMarka.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMarka.ImageOptions.LargeImage")));
-            this.btnMarka.Name = "btnMarka";
-            this.btnMarka.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarka_ItemClick);
+            this.btnMarkaİstatistik.Caption = "Marka İstatistikleri";
+            this.btnMarkaİstatistik.Id = 7;
+            this.btnMarkaİstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkaİstatistik.ImageOptions.Image")));
+            this.btnMarkaİstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMarkaİstatistik.ImageOptions.LargeImage")));
+            this.btnMarkaİstatistik.Name = "btnMarkaİstatistik";
+            this.btnMarkaİstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMarkaİstatistik_ItemClick);
             // 
             // btnArızalıÜrünListesi
             // 
@@ -590,6 +590,15 @@ namespace TeknikServis
             this.btnHakkımızda.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHakkımızda.ImageOptions.LargeImage")));
             this.btnHakkımızda.Name = "btnHakkımızda";
             // 
+            // btnAnaSayfa
+            // 
+            this.btnAnaSayfa.Caption = "Ana Sayfa";
+            this.btnAnaSayfa.Id = 51;
+            this.btnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAnaSayfa.ImageOptions.Image")));
+            this.btnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAnaSayfa.ImageOptions.LargeImage")));
+            this.btnAnaSayfa.Name = "btnAnaSayfa";
+            this.btnAnaSayfa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAnaSayfa_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -623,13 +632,12 @@ namespace TeknikServis
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnYeniUrun);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnUrunListesiFormu);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPageGroup11
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.Btnİstatistik);
-            this.ribbonPageGroup11.ItemLinks.Add(this.btnMarka);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnMarkaİstatistik);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             // 
             // ribbonPageGroup12
@@ -643,7 +651,6 @@ namespace TeknikServis
             // ribbonPageGroup13
             // 
             this.ribbonPageGroup13.ItemLinks.Add(this.btnQRCode);
-            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
             // ribbonPage3
@@ -773,15 +780,6 @@ namespace TeknikServis
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // btnAnaSayfa
-            // 
-            this.btnAnaSayfa.Caption = "Ana Sayfa";
-            this.btnAnaSayfa.Id = 51;
-            this.btnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btnAnaSayfa.Name = "btnAnaSayfa";
-            this.btnAnaSayfa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAnaSayfa_ItemClick);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -809,7 +807,7 @@ namespace TeknikServis
         private DevExpress.XtraBars.BarButtonItem BtnYeniUrun;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem Btnİstatistik;
-        private DevExpress.XtraBars.BarButtonItem btnMarka;
+        private DevExpress.XtraBars.BarButtonItem btnMarkaİstatistik;
         private DevExpress.XtraBars.BarButtonItem btnArızalıÜrünListesi;
         private DevExpress.XtraBars.BarButtonItem btnYeniArızalıUrunKaydi;
         private DevExpress.XtraBars.BarButtonItem btnArızalıUrunAcıklama;

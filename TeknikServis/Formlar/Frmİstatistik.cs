@@ -33,8 +33,11 @@ namespace TeknikServis.Formlar
             en_dusuk_fiyatlı_urun.Text = (from x in db.TBLURUN orderby x.SATISFIYAT ascending select x.AD).FirstOrDefault();
             beyaz_esya_stok_adet.Text = db.TBLURUN.Count(x => x.KATEGORI == 4).ToString();
             laptop_stok_adet.Text= db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
+            tv_stok_sayısı.Text = db.TBLURUN.Count(x => x.KATEGORI == 5).ToString();
             kucuk_ev_aleti_stok_sayısı.Text= db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
             toplam_marka_sayısı.Text = (from x in db.TBLURUN select x.MARKA).Distinct().Count().ToString();
+            Arızalı_Urun_Sayısı.Text = db.TBLURUNKABUL.Count().ToString();
+            En_Fazla_Urun_Kat.Text = db.MaxKategoriUrun().FirstOrDefault();
         }
     }
 }

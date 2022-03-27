@@ -49,5 +49,10 @@ namespace TeknikServis
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<UrunKategori_Result>("UrunKategori");
         }
+    
+        public virtual ObjectResult<string> MaxKategoriUrun()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("MaxKategoriUrun");
+        }
     }
 }
