@@ -31,6 +31,7 @@ namespace TeknikServis.Formlar
         {
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCariİller));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
@@ -67,7 +68,7 @@ namespace TeknikServis.Formlar
             // 
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(472, 0);
-            this.chartControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartControl1.Margin = new System.Windows.Forms.Padding(2);
             this.chartControl1.Name = "chartControl1";
             series1.LegendTextPattern = "{A}";
             series1.Name = "Sehirler";
@@ -85,7 +86,8 @@ namespace TeknikServis.Formlar
             this.ClientSize = new System.Drawing.Size(1026, 562);
             this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.gridControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCariİller";

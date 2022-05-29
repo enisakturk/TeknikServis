@@ -102,6 +102,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.gridControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFaturaKalemleri";
             this.Text = "Ürün Takip";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

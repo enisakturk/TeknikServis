@@ -43,14 +43,14 @@ namespace TeknikServis.Formlar
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTarih = new DevExpress.XtraEditors.TextEdit();
-            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtİçerik.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBaşlık.Properties)).BeginInit();
@@ -58,10 +58,10 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl30
@@ -209,6 +209,36 @@ namespace TeknikServis.Formlar
             this.groupControl1.TabIndex = 19;
             this.groupControl1.Text = "AJANDA İŞLEMLERİ";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(72, 460);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(134, 26);
+            this.btnTemizle.TabIndex = 31;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(28, 277);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(38, 13);
+            this.labelControl4.TabIndex = 30;
+            this.labelControl4.Text = "TARİH :";
+            // 
+            // txtTarih
+            // 
+            this.txtTarih.Location = new System.Drawing.Point(72, 274);
+            this.txtTarih.Margin = new System.Windows.Forms.Padding(6);
+            this.txtTarih.Name = "txtTarih";
+            this.txtTarih.Properties.Mask.EditMask = "d";
+            this.txtTarih.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
+            this.txtTarih.Size = new System.Drawing.Size(134, 20);
+            this.txtTarih.TabIndex = 4;
+            // 
             // checkEdit1
             // 
             this.checkEdit1.Location = new System.Drawing.Point(72, 305);
@@ -221,7 +251,9 @@ namespace TeknikServis.Formlar
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(244, 15);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
@@ -232,7 +264,9 @@ namespace TeknikServis.Formlar
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
             this.labelControl3.Location = new System.Drawing.Point(244, 357);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
@@ -262,36 +296,6 @@ namespace TeknikServis.Formlar
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(28, 277);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(38, 13);
-            this.labelControl4.TabIndex = 30;
-            this.labelControl4.Text = "TARİH :";
-            // 
-            // txtTarih
-            // 
-            this.txtTarih.Location = new System.Drawing.Point(72, 274);
-            this.txtTarih.Margin = new System.Windows.Forms.Padding(6);
-            this.txtTarih.Name = "txtTarih";
-            this.txtTarih.Properties.Mask.EditMask = "d";
-            this.txtTarih.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTime;
-            this.txtTarih.Size = new System.Drawing.Size(134, 20);
-            this.txtTarih.TabIndex = 4;
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(72, 460);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(134, 26);
-            this.btnTemizle.TabIndex = 31;
-            this.btnTemizle.Text = "TEMİZLE";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
-            // 
             // FrmNotlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,6 +307,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmNotlar";
             this.Text = "Notlar";
@@ -315,10 +320,10 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTarih.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

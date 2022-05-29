@@ -47,7 +47,7 @@ namespace TeknikServis.Formlar
             this.kapat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapat.EditValue = ((object)(resources.GetObject("kapat.EditValue")));
             this.kapat.Location = new System.Drawing.Point(340, 10);
-            this.kapat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kapat.Margin = new System.Windows.Forms.Padding(2);
             this.kapat.Name = "kapat";
             this.kapat.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.kapat.Properties.Appearance.Options.UseBackColor = true;
@@ -61,7 +61,7 @@ namespace TeknikServis.Formlar
             // 
             this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
             this.btnKaydet.Location = new System.Drawing.Point(133, 136);
-            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(2);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(114, 28);
             this.btnKaydet.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace TeknikServis.Formlar
             this.textEdit7.EditValue = "Yeni Departman Ekleme";
             this.textEdit7.Enabled = false;
             this.textEdit7.Location = new System.Drawing.Point(102, 12);
-            this.textEdit7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textEdit7.Margin = new System.Windows.Forms.Padding(2);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -90,7 +90,7 @@ namespace TeknikServis.Formlar
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(110, 109);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(173, 3);
             this.panel1.TabIndex = 69;
@@ -99,7 +99,7 @@ namespace TeknikServis.Formlar
             // 
             this.txtDepartmanAd.EditValue = "Departman Adı";
             this.txtDepartmanAd.Location = new System.Drawing.Point(113, 82);
-            this.txtDepartmanAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDepartmanAd.Margin = new System.Windows.Forms.Padding(2);
             this.txtDepartmanAd.Name = "txtDepartmanAd";
             this.txtDepartmanAd.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.txtDepartmanAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,7 +116,7 @@ namespace TeknikServis.Formlar
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(76, 79);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -138,7 +138,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.txtDepartmanAd);
             this.Controls.Add(this.pictureEdit1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmYeniDepartman";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmYeniDepartman";

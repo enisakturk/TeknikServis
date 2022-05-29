@@ -262,14 +262,14 @@ namespace TeknikServis.Formlar
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(-2, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(220, 121);
+            this.pictureEdit1.Size = new System.Drawing.Size(218, 119);
             this.pictureEdit1.TabIndex = 14;
             // 
             // panel3
@@ -293,6 +293,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmDepartman";
             this.Text = "Departmanlar";

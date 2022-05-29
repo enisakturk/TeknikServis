@@ -37,7 +37,7 @@ namespace TeknikServis.İletişim
             mail.IsBodyHtml = true;
             //mail protokol istemcisi ve host ve port bilgileri
             SmtpClient smpt = new SmtpClient("smtp.gmail.com",587);
-            //kimden geliyor
+            //göndericinin kimlik bilgileri
             smpt.Credentials = new NetworkCredential(form_mail, sifre);
             //maili şifrelemeye yarıyor
             smpt.EnableSsl = true;

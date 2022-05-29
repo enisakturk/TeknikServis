@@ -29,6 +29,7 @@ namespace TeknikServis.İletişim
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGelenMesajlar));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -65,6 +66,7 @@ namespace TeknikServis.İletişim
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(1350, 700);
             this.Controls.Add(this.gridControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmGelenMesajlar";
             this.Text = "Gelen Mesajlar";
             this.Load += new System.EventHandler(this.FrmGelenMesajlar_Load);

@@ -309,6 +309,7 @@ namespace TeknikServis.Formlar
             this.ClientSize = new System.Drawing.Size(1370, 700);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmUrunListesi";
             this.Text = "Ürün Listesi";

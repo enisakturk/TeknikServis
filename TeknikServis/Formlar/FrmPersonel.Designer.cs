@@ -33,6 +33,7 @@ namespace TeknikServis.Formlar
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_Temizle = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
             this.txtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
@@ -49,7 +50,6 @@ namespace TeknikServis.Formlar
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.TxtAd = new DevExpress.XtraEditors.TextEdit();
-            this.btn_Temizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -115,6 +115,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.Size = new System.Drawing.Size(255, 697);
             this.groupControl1.TabIndex = 17;
             this.groupControl1.Text = "PERSONEL İŞLEMLERİ";
+            // 
+            // btn_Temizle
+            // 
+            this.btn_Temizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Temizle.ImageOptions.Image")));
+            this.btn_Temizle.Location = new System.Drawing.Point(88, 533);
+            this.btn_Temizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Temizle.Name = "btn_Temizle";
+            this.btn_Temizle.Size = new System.Drawing.Size(134, 26);
+            this.btn_Temizle.TabIndex = 29;
+            this.btn_Temizle.Text = "TEMİZLE";
+            this.btn_Temizle.Click += new System.EventHandler(this.btn_Temizle_Click);
             // 
             // labelControl30
             // 
@@ -268,17 +279,6 @@ namespace TeknikServis.Formlar
             this.TxtAd.Size = new System.Drawing.Size(134, 20);
             this.TxtAd.TabIndex = 2;
             // 
-            // btn_Temizle
-            // 
-            this.btn_Temizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btn_Temizle.Location = new System.Drawing.Point(88, 533);
-            this.btn_Temizle.Margin = new System.Windows.Forms.Padding(6);
-            this.btn_Temizle.Name = "btn_Temizle";
-            this.btn_Temizle.Size = new System.Drawing.Size(134, 26);
-            this.btn_Temizle.TabIndex = 29;
-            this.btn_Temizle.Text = "TEMİZLE";
-            this.btn_Temizle.Click += new System.EventHandler(this.btn_Temizle_Click);
-            // 
             // FrmPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,6 +287,7 @@ namespace TeknikServis.Formlar
             this.ClientSize = new System.Drawing.Size(1370, 700);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPersonel";
             this.Text = "Personeller";

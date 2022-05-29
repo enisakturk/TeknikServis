@@ -43,13 +43,13 @@ namespace TeknikServis.Formlar
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtFaturaId = new DevExpress.XtraEditors.TextEdit();
             this.txtTutar = new DevExpress.XtraEditors.TextEdit();
             this.txtFiyat = new DevExpress.XtraEditors.TextEdit();
             this.txtAdet = new DevExpress.XtraEditors.TextEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtDetayId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUrun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -224,6 +224,17 @@ namespace TeknikServis.Formlar
             this.groupControl1.TabIndex = 15;
             this.groupControl1.Text = "FATURA ÜRÜN İŞLEMLERİ";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(133, 522);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(146, 30);
+            this.btnTemizle.TabIndex = 20;
+            this.btnTemizle.Text = "TEMİZLE";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // txtFaturaId
             // 
             this.txtFaturaId.Location = new System.Drawing.Point(133, 205);
@@ -283,17 +294,6 @@ namespace TeknikServis.Formlar
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
-            // btnTemizle
-            // 
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(133, 522);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(6);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(146, 30);
-            this.btnTemizle.TabIndex = 20;
-            this.btnTemizle.Text = "TEMİZLE";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
-            // 
             // FrmFaturaKalem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,6 +302,7 @@ namespace TeknikServis.Formlar
             this.ClientSize = new System.Drawing.Size(1350, 700);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFaturaKalem";
             this.Text = "Fatura Ürün";
             this.Load += new System.EventHandler(this.FrmFaturaKalem_Load);

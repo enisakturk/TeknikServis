@@ -510,8 +510,8 @@ namespace TeknikServis
             // 
             this.btnYeniMail.Caption = "Yeni Mail";
             this.btnYeniMail.Id = 39;
-            this.btnYeniMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.Image")));
-            this.btnYeniMail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
+            this.btnYeniMail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYeniMail.ImageOptions.Image")));
+            this.btnYeniMail.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnYeniMail.ImageOptions.LargeImage")));
             this.btnYeniMail.Name = "btnYeniMail";
             this.btnYeniMail.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnYeniMail_ItemClick);
             // 
@@ -760,6 +760,7 @@ namespace TeknikServis
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1368, 692);
             this.Controls.Add(this.ribbonControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.Name = "Form1";

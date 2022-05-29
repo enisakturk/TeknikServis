@@ -29,6 +29,7 @@ namespace TeknikServis.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmİstatistik));
             this.panel1 = new System.Windows.Forms.Panel();
             this.toplam_urun = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -667,6 +668,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frmİstatistik";
             this.Text = "İstatistikler";

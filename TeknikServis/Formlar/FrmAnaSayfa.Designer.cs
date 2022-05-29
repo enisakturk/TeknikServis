@@ -29,9 +29,12 @@ namespace TeknikServis.Formlar
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaSayfa));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.gridControl5 = new DevExpress.XtraGrid.GridControl();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.grp_KritikSeviye = new DevExpress.XtraEditors.GroupControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -42,12 +45,12 @@ namespace TeknikServis.Formlar
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.gridControl4 = new DevExpress.XtraGrid.GridControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridControl5 = new DevExpress.XtraGrid.GridControl();
-            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grp_KritikSeviye)).BeginInit();
             this.grp_KritikSeviye.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -62,8 +65,6 @@ namespace TeknikServis.Formlar
             this.groupControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -98,6 +99,28 @@ namespace TeknikServis.Formlar
             this.groupControl1.Size = new System.Drawing.Size(501, 747);
             this.groupControl1.TabIndex = 13;
             this.groupControl1.Text = "Mesajlar";
+            // 
+            // gridControl5
+            // 
+            this.gridControl5.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.gridControl5.Location = new System.Drawing.Point(0, 23);
+            this.gridControl5.MainView = this.gridView5;
+            this.gridControl5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
+            this.gridControl5.Name = "gridControl5";
+            this.gridControl5.Size = new System.Drawing.Size(501, 724);
+            this.gridControl5.TabIndex = 12;
+            this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView5});
+            // 
+            // gridView5
+            // 
+            this.gridView5.Appearance.Row.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridView5.Appearance.Row.BackColor2 = System.Drawing.Color.WhiteSmoke;
+            this.gridView5.Appearance.Row.Options.UseBackColor = true;
+            this.gridView5.DetailHeight = 1352;
+            this.gridView5.GridControl = this.gridControl5;
+            this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsView.ShowGroupPanel = false;
             // 
             // grp_KritikSeviye
             // 
@@ -201,28 +224,6 @@ namespace TeknikServis.Formlar
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowGroupPanel = false;
             // 
-            // gridControl5
-            // 
-            this.gridControl5.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.gridControl5.Location = new System.Drawing.Point(0, 23);
-            this.gridControl5.MainView = this.gridView5;
-            this.gridControl5.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
-            this.gridControl5.Name = "gridControl5";
-            this.gridControl5.Size = new System.Drawing.Size(501, 724);
-            this.gridControl5.TabIndex = 12;
-            this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView5});
-            // 
-            // gridView5
-            // 
-            this.gridView5.Appearance.Row.BackColor = System.Drawing.Color.Gainsboro;
-            this.gridView5.Appearance.Row.BackColor2 = System.Drawing.Color.WhiteSmoke;
-            this.gridView5.Appearance.Row.Options.UseBackColor = true;
-            this.gridView5.DetailHeight = 1352;
-            this.gridView5.GridControl = this.gridControl5;
-            this.gridView5.Name = "gridView5";
-            this.gridView5.OptionsView.ShowGroupPanel = false;
-            // 
             // FrmAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +235,7 @@ namespace TeknikServis.Formlar
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.grp_KritikSeviye);
             this.Controls.Add(this.groupControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAnaSayfa";
             this.Text = "Ana Sayfa";
             this.Load += new System.EventHandler(this.FrmAnaSayfa_Load);
@@ -241,6 +243,8 @@ namespace TeknikServis.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grp_KritikSeviye)).EndInit();
             this.grp_KritikSeviye.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -255,8 +259,6 @@ namespace TeknikServis.Formlar
             this.groupControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.ResumeLayout(false);
 
         }
